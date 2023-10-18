@@ -1,0 +1,379 @@
+[
+   {
+      "pk":1,
+      "model":"products.product",
+      "fields":{
+         "sku":"pi0000001",
+         "name":"Knee Sleeve 5mm",
+         "description":"When lifting heavy, your joints can come under tons of stress. The DreamBuild Knee Sleeves 5mm have been forged to keep your knees safe, secure and supported throughout squats, leg presses and more with a compressive fit and insulating material. (Sizing in inches S: 12.0 - 12.9, M: 13.1 - 13.8, L: 13.9 - 14.6, XL: 14.7 - 15.4, XXL: 15.5 - 16.1)",
+         "price":19.99,
+         "category":5,
+         "rating":4.6,
+         "image":"PI0000001.jpg"
+      }
+   },
+   {
+      "pk":2,
+      "model":"products.product",
+      "fields":{
+         "sku":"pi0000002",
+         "name":"DB Mini Barrel Bag - Black",
+         "description":"Store all your gym gear with ease in our mini barrel bag. An adjustable woven shoulder strap, which can be removed.",
+         "price":24.99,
+         "category":1,
+         "rating":4.1,
+         "image":"PI0000002.jpg"
+      }
+   },
+   {
+      "pk":3,
+      "model":"products.product",
+      "fields":{
+         "sku":"pi0000003",
+         "name":"DreamBuild Backpack",
+         "description":"A bag that carries everything you could need it to and looks as good as you could want it to? It’s here. The DreamBuild Backpack’s aesthetic is unmissable, but its functionality goes even further with enough pockets to carry work essentials, gym kit and meals for the day all at the same time.\"",
+         "price":39.99,
+         "category":1,
+         "rating":4.7,
+         "image":"PI0000003.jpg"
+      }
+   },
+   {
+      "pk":4,
+      "model":"products.product",
+      "fields":{
+         "sku":"pi0000004",
+         "name":"DreamBuild Shaker (1 Litre) - Black",
+         "description":"Standing at an impressive 1 litre capacity this shaker is ideal for those larger weight gain or meal replacement shakes, as well as doubling up as a water bottle keeping you hydrated during those intense training sessions.",
+         "price":6.99,
+         "category":1,
+         "rating":3.9,
+         "image":"PI0000004.jpg"
+      }
+   },
+   {
+      "pk":5,
+      "model":"products.product",
+      "fields":{
+         "sku":"pi0000005",
+         "name":"Rest Day Hoodie - Black",
+         "description":"Meet your key rest day pieces in the Rest Day collection, with styles as easy to wear as your day is easygoing.",
+         "price":49.99,
+         "category":2,
+         "rating":5.0,
+         "image":"PI0000005.jpg"
+      }
+   },
+   {
+      "pk":6,
+      "model":"products.product",
+      "fields":{
+         "sku":"pi0000006",
+         "name":"Rest Day Hoodie - Mint Green",
+         "description":"Meet your key rest day pieces in the Rest Day collection, with styles as easy to wear as your day is easygoing.",
+         "price":49.99,
+         "category":2,
+         "rating":4.7,
+         "image":"PI0000006.jpg"
+      }
+   },
+   {
+      "pk":7,
+      "model":"products.product",
+      "fields":{
+         "sku":"pi0000007",
+         "name":"DreamBuild Cropped Hoodie - Black",
+         "description":"A warm, comfortable, stylish hoodie with a loose, cropped cut for wearing before or after training, or even just as an ordinary sweatshirt.",
+         "price":39.99,
+         "category":2,
+         "rating":4.7,
+         "image":"PI0000007.jpg"
+      }
+   },
+   {
+      "pk":8,
+      "model":"products.product",
+      "fields":{
+         "sku":"pi0000008",
+         "name":"DreamBuild Cropped Hoodie - Green",
+         "description":"A warm, comfortable, stylish hoodie with a loose, cropped cut for wearing before or after training, or even just as an ordinary sweatshirt.",
+         "price":39.99,
+         "category":2,
+         "rating":3.9,
+         "image":"PI0000008.jpg"
+      }
+   },
+   {
+      "pk":9,
+      "model":"products.product",
+      "fields":{
+         "sku":"pi0000009",
+         "name":"DB Seamless Leggings - Black",
+         "description":"More stretch, more comfort, more support. Get the all-new Core Seamless Leggings in Black : featuring a supportive ribbed waistband, sweat-wicking fabric, minimalistic design and with a squat proof rating of 98%. Your new favourite Seamless Leggings are right here.",
+         "price":34.99,
+         "category":3,
+         "rating":4.8,
+         "image":"PI0000009.jpg"
+      }
+   },
+   {
+      "pk":10,
+      "model":"products.product",
+      "fields":{
+         "sku":"pi0000010",
+         "name":"DB Joggers - Grey",
+         "description":"A minimalist design means you’ll have full focus on your training, and new physique-accentuating seams and panels provide an understated lifting aesthetic. Train your hardest, and DB Joggers will never let you down.",
+         "price":39.99,
+         "category":3,
+         "rating":4.7,
+         "image":"PI0000010.jpg"
+      }
+   },
+   {
+      "pk":11,
+      "model":"products.product",
+      "fields":{
+         "sku":"pi0000011",
+         "name":"DB Seamless Shorts - Black",
+         "description":"Ready for your biggest workout or your well deserved rest day. Featuring a supportive yet super comfortable fit, DB Seamless Shorts is a premium quality, practical and unique seamless collection that makes you look and feel amazing.",
+         "price":29.99,
+         "category":3,
+         "rating":4.5,
+         "image":"PI0000011.jpg"
+      }
+   },
+   {
+      "pk":12,
+      "model":"products.product",
+      "fields":{
+         "sku":"pi0000012",
+         "name":"DreamBuild Shorts - Black",
+         "description":"A minimalist design means you’ll have full focus on your training, and new physique-accentuating seams and panels provide an understated lifting aesthetic. Train your hardest, and DreamBuild will never let you down.",
+         "price":29.99,
+         "category":3,
+         "rating":4.5,
+         "image":"PI0000012.jpg"
+      }
+   },
+   {
+      "pk":13,
+      "model":"products.product",
+      "fields":{
+         "sku":"pi0000013",
+         "name":"DB Wrist Wraps - Black",
+         "description":"The DB Wrist Wraps have you covered during your next lifting session. Elasticated thumbholes keep the strap in place, while a high-stretch material and velcro fastening means you can customise the wrist support to suit your needs, as you grab the barbells, dumbbells, and workouts, with all your might.",
+         "price":14.99,
+         "category":5,
+         "rating":4.1,
+         "image":"PI0000013.jpg"
+      }
+   },
+   {
+      "pk":14,
+      "model":"products.product",
+      "fields":{
+         "sku":"pi0000014",
+         "name":"DB Wrist Wraps - Teal",
+         "description":"The DB Wrist Wraps have you covered during your next lifting session. Elasticated thumbholes keep the strap in place, while a high-stretch material and velcro fastening means you can customise the wrist support to suit your needs, as you grab the barbells, dumbbells, and workouts, with all your might.",
+         "price":14.99,
+         "category":5,
+         "rating":3.4,
+         "image":"PI0000014.jpg"
+      }
+   },
+   {
+      "pk":15,
+      "model":"products.product",
+      "fields":{
+         "sku":"pi0000015",
+         "name":"10MM LEVER BELT - BLACK",
+         "description":"A high-quality lifting belt is an essential accessory for many strength athletes. Our popular 10mm Lever Belt is designed to give you support and stability during your lifts without feeling restrictive and uncomfortable. With a lever design, you simply need to set your belt size once, and you can take it on and off without adjusting. SIZING GUIDE (INCHES) XS: 24- 30, S: 29- 35, M: 34- 39, L: 38- 43, XL: 40- 45",
+         "price":14.99,
+         "category":5,
+         "rating":4.6,
+         "image":"PI0000015.jpg"
+      }
+   },
+   {
+      "pk":16,
+      "model":"products.product",
+      "fields":{
+         "sku":"pi0000016",
+         "name":"Oversized T-Shirt - Black",
+         "description":"The oversized t-shirt is made from a medium-weight fabric, with extra room to move, for the ultimate relaxed fit.",
+         "price":26.99,
+         "category":6,
+         "rating":4.6,
+         "image":"PI0000016.jpg"
+      }
+   },
+   {
+      "pk":17,
+      "model":"products.product",
+      "fields":{
+         "sku":"pi0000017",
+         "name":"Oversized T-Shirt - White",
+         "description":"The oversized t-shirt is made from a medium-weight fabric, with extra room to move, for the ultimate relaxed fit.",
+         "price":26.99,
+         "category":6,
+         "rating":4.1,
+         "image":"PI0000017.jpg"
+      }
+   },
+   {
+      "pk":18,
+      "model":"products.product",
+      "fields":{
+         "sku":"pi0000018",
+         "name":"Knot Back Crop Tank - Maroon",
+         "description":"A comfortable, soft, and boxy fit women’s vest that’s ready to perform and relax with you. Featuring a cropped length and open back design for a splash of style, whether you’re hitting a new PR or taking the day off.",
+         "price":23.99,
+         "category":6,
+         "rating":4.9,
+         "image":"PI0000018.jpg"
+      }
+   },
+   {
+      "pk":19,
+      "model":"products.product",
+      "fields":{
+         "sku":"pi0000019",
+         "name":"Knot Back Crop Tank - Black",
+         "description":"A comfortable, soft, and boxy fit women’s vest that’s ready to perform and relax with you. Featuring a cropped length and open back design for a splash of style, whether you’re hitting a new PR or taking the day off.",
+         "price":23.99,
+         "category":6,
+         "rating":4.7,
+         "image":"PI0000019.jpg"
+      }
+   },
+   {
+      "pk":20,
+      "model":"products.product",
+      "fields":{
+         "sku":"pi0000020",
+         "name":"DB Cut off Tank - Beige",
+         "description":"The DreamBuild tank offers a unique fit and style for the avid gym goer. This men's tank has extra room throughout, ready for all of your biggest workouts.",
+         "price":19.99,
+         "category":6,
+         "rating":4.4,
+         "image":"PI0000020.jpg"
+      }
+   },
+   {
+      "pk":21,
+      "model":"products.product",
+      "fields":{
+         "sku":"pi0000021",
+         "name":"DB Seamless Long Sleeve Crop Top - Black",
+         "description":"Complete your outfit with the DreamBuild seamless long sleeve crop top. Ready for your biggest workout or your well deserved rest day.",
+         "price":29.99,
+         "category":6,
+         "rating":4.5,
+         "image":"PI0000021.jpg"
+      }
+   },
+   {
+      "pk":22,
+      "model":"products.product",
+      "fields":{
+         "sku":"pi0000022",
+         "name":"DreamBuild Boxers 2PK - White",
+         "description":"Our classic boxer design, now with a shorter and tighter fit, so you'll always feel snug and secure without any bunching. Just because you're on the move, doesn't mean your boxers should too.",
+         "price":16.99,
+         "category":7,
+         "rating":4.4,
+         "image":"PI0000022.jpg"
+      }
+   },
+   {
+      "pk":23,
+      "model":"products.product",
+      "fields":{
+         "sku":"pi0000023",
+         "name":"DreamBuild Seamless Boxers 2PK - Black",
+         "description":"An essential for everyday comfort, our underwear is made seamlessly with soft touch yarn. With Engineered seamless panels for ventilation.",
+         "price":16.99,
+         "category":7,
+         "rating":4.1,
+         "image":"PI0000023.jpg"
+      }
+   },
+   {
+      "pk":24,
+      "model":"products.product",
+      "fields":{
+         "sku":"pi0000024",
+         "name":"Sports Cushioned Crew Socks 3 pack - White",
+         "description":"The crew cut offers a trendy silhouette and a sporty style. Whether you’re wearing leggings or shorts, these socks will look and feel great. ",
+         "price":19.99,
+         "category":7,
+         "rating":4.0,
+         "image":"PI0000024.jpg"
+      }
+   },
+   {
+      "pk":25,
+      "model":"products.product",
+      "fields":{
+         "sku":"pi0000025",
+         "name":"Sports Cushioned Crew Socks 3 pack - Black",
+         "description":"The crew cut offers a trendy silhouette and a sporty style. Whether you’re wearing leggings or shorts, these socks will look and feel great. ",
+         "price":19.99,
+         "category":7,
+         "rating":4.2,
+         "image":"PI0000025.jpg"
+      }
+   },
+   {
+      "pk":26,
+      "model":"products.product",
+      "fields":{
+         "sku":"pi0000026",
+         "name":"1 Monthly Membership - Training, Meal Plans, Support",
+         "description":"What you’ll receive? Fully customised training plan, with personalized meal plan options, with beginner, intermediate and advanced options. Over 950 delicious recipes to choose from, with vegan, veggie and keto options available. You will also have 24/7 motivation email support. You will be prompted at the end of your subscription – to visit and renew/purchase your choice of subscription again. ** Payment taken in full on purchase ",
+         "price":44.99,
+         "category":4,
+         "rating":4.4,
+         "image":"PI0000026.jpg"
+      }
+   },
+   {
+      "pk":27,
+      "model":"products.product",
+      "fields":{
+         "sku":"pi0000027",
+         "name":"3 Monthly Membership - Training, Meal Plans, Support",
+         "description":"Why not choose our 3 month membership? Which works out only £38.33 a month. What you’ll receive? Fully customised training plan, with personalized meal plan options, with beginner, intermediate and advanced options. Over 950 delicious recipes to choose from, with vegan, veggie and keto options available. You will also have 24/7 motivation email support. You will be prompted at the end of your subscription – to visit and renew/purchase your choice of subscription again. ** Payment taken in full on purchase",
+         "price":114.99,
+         "category":4,
+         "rating":4.8,
+         "image":"PI0000027.jpg"
+      }
+   },
+   {
+      "pk":28,
+      "model":"products.product",
+      "fields":{
+         "sku":"pi0000028",
+         "name":"6 Monthly Membership - Training, Meal Plans, Support",
+         "description":"BEST VALUE! This equates to only £33.33 a month! What you’ll receive? Fully customised training plan, with personalized meal plan options, with beginner, intermediate and advanced options. Over 950 delicious recipes to choose from, with vegan, veggie and keto options available. You will also have 24/7 motivation email support. You will be prompted at the end of your subscription – to visit and renew/purchase your choice of subscription again. ** Payment taken in full on purchase",
+         "price":199.99,
+         "category":4,
+         "rating":4.9,
+         "image":"PI0000028.jpg"
+      }
+   },
+   {
+      "pk":29,
+      "model":"products.product",
+      "fields":{
+         "sku":"pi0000029",
+         "name":"Meal Plan Only - 12 weeks",
+         "description":"What you’ll receive? Personalized meal plan options. Over 950 delicious recipes to choose from, with vegan, veggie and keto options available. Easy to follow shopping lists. You will be prompted at the end of your subscription – to visit and renew/purchase your choice of subscription again. ** Payment taken in full on purchase",
+         "price":53.99,
+         "category":4,
+         "rating":4.3,
+         "image":"PI0000029.jpg"
+      }
+   }
+]

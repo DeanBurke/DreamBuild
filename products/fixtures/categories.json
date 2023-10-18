@@ -1,0 +1,59 @@
+[
+    {
+        "pk": 1,
+        "model": "products.category",
+        "fields": {
+            "name": "bags",
+            "friendly_name": "Bags"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.category",
+        "fields": {
+            "name": "hoodies",
+            "friendly_name": "Hoodies"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.category",
+        "fields": {
+            "name": "joggers_leggings",
+            "friendly_name": "Joggers & Leggings"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.category",
+        "fields": {
+            "name": "meal_training_plans",
+            "friendly_name": "Meals & Training Plans"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.category",
+        "fields": {
+            "name": "training_equipment",
+            "friendly_name": "Training Equipment"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.category",
+        "fields": {
+            "name": "tops",
+            "friendly_name": "Tops"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.category",
+        "fields": {
+            "name": "underwear_socks",
+            "friendly_name": "Underwear & Socks"
+        }
+    }
+]
+
