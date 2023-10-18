@@ -60,6 +60,23 @@ body {
     background: #000 !important;
 }
 
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 28.5vw;
+    object-fit: cover;
+}
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -98,6 +115,19 @@ body {
 
     body {
         background-position: -1000px 100px;
+    }
+
+    .card-img-top {
+        height: 35.5vw;
+    }
+
+}
+
+/* card adjustment on small screens */
+@media (max-width: 575px) {
+
+    .card-img-top {
+        height: 75vw;
     }
 
 }
