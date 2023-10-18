@@ -70,7 +70,7 @@ body {
 	z-index: -1;
 }
 
-.card-img-top {
+.products .card-img-top {
     width: 100%;
     height: 28.5vw;
     object-fit: cover;
@@ -115,10 +115,15 @@ body {
 
     body {
         background-position: -1000px 100px;
+        height: calc(100vh - 116px);
     }
 
-    .card-img-top {
+    .products .card-img-top {
         height: 35.5vw;
+    }
+
+    .header-container {
+        padding-top: 116px;
     }
 
 }
@@ -126,7 +131,7 @@ body {
 /* card adjustment on small screens */
 @media (max-width: 575px) {
 
-    .card-img-top {
+    .products .card-img-top {
         height: 75vw;
     }
 
