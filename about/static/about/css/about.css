@@ -1,0 +1,37 @@
+.clients {
+    max-width: 800px;
+}
+
+.clients-box {
+    background-color: #000;
+    color: white;
+}
+
+i {
+    font-size: 2rem;
+}
+
+@property --num {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  .counter {
+    animation: counter 5s forwards alternate ease-in-out;
+    counter-reset: num var(--num);
+    font: 800 40px system-ui;
+    text-align: center;
+  }
+  .counter::after {
+    content: counter(num);
+  }
+  
+  @keyframes counter {
+    from {
+      --num: 0;
+    }
+    to {
+      --num: 648;
+    }
+  }

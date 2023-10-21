@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'about/css/about.css' %}">
+{% endblock %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container-fluid py-4 pt-lg-4 clients">
+        <div class="container py-4 pt-lg-4">
+            <div class="row gx-0">
+                <div class="col align-items-center">
+                    <div class="clients-box shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 50px; height: 50px;">
+                            <i class="fa fa-users text-dark"></i>
+                        </div>
+                        <div class="p-4">
+                            <h5 class="text-white mb-0">Happy Clients</h5>
+                            <div class="counter"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <hr>
+                <h2 class="logo-font mb-4">About Us</h2>
+                <hr>
+            </div>
+        </div>
+        <div class="row g-5">
+            <div class="col">
+                <p class="mb-4">At DreamBuild Fitness, we are more than just a destination for gym clothing 
+                    – we are your partner in achieving your fitness dreams. We believe that the path to a healthier, 
+                    stronger, and more vibrant you begins with a solid foundation of the right workout gear, expert 
+                    training guidance, and a balanced diet.
+                </p>
+                <p class="mb-4">Explore our premium collection of gym clothing and accessories that are designed 
+                    to empower you during your workouts, helping you perform at your best while looking stylish. 
+                    But that's just the beginning of what we offer. Our mission goes beyond attire; we're here to 
+                    inspire you to reach your full potential.
+                </p>
+                <p class="mb-4">Unlock your fitness potential with our carefully curated training programs, tailored 
+                    to suit various fitness levels and goals. Whether you're a beginner looking to kickstart your 
+                    fitness journey or a seasoned athlete aiming to break through plateaus, we have the expertise and 
+                    resources to help you reach your objectives.
+                </p>
+                <p class="mb-4">For those looking to conquer their dietary challenges, our comprehensive meal plans 
+                    provide a road map to healthy, balanced eating, helping you fuel your body for success.
+                </p>
+                <p class="mb-4">At DreamBuild Fitness, we are dedicated to making your dream physique a reality. 
+                    Let's dream, let's build, let's achieve, together. Welcome to your new fitness journey!
+                </p>
+                <div class="row g-0 mb-3">
+                    <div class="col-sm-6">
+                        <h5 class="mb-3" style="color: #555;"><i class="fa fa-check text-dark me-3"></i>Professional Staff</h5>
+                    </div>
+                    <div class="col-sm-6">
+                        <h5 class="mb-3" style="color: #555;"><i class="fa fa-check text-dark me-3"></i>24/7 Email Support</h5>
+                    </div>
+                </div>
+                <a href="{% url 'products' %}?category=meal_training_plans" class="btn btn-dark py-3 px-5 mt-3" style="background-color: #000;">Join Today!</a>
+            </div>
+            <div class="col-lg-5" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" src="img/about.jpg" style="object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% include 'includes/footer.html'%}
+{% endblock %}
