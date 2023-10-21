@@ -10,6 +10,35 @@ body {
     font-family: 'Lato';
 }
 
+/* footer */
+footer {
+    padding-top: 10rem;
+}
+footer .main-footer{ 
+    padding: 0;
+    margin-top: 15px;  
+    background: #000;
+}
+
+footer ul{  
+   padding-left: 0;  
+   list-style: none;
+}
+
+footer p {
+    color: white;
+}
+
+h4 {
+   color: white;
+}
+
+.thumb-content a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
