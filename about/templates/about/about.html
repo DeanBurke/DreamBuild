@@ -73,10 +73,15 @@
                 </div>
                 <a href="{% url 'products' %}?category=meal_training_plans" class="btn btn-dark py-3 px-5 mt-3" style="background-color: #000;">Join Today!</a>
             </div>
-            <div class="col-lg-5" style="min-height: 500px;">
+            <div class="col-lg-5 py-2 py-lg-0" style="min-height: 500px;">
                 <div class="position-relative h-100">
-                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" src="img/about.jpg" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100 rounded" src="{{ MEDIA_URL }}about.jpg" style="object-fit: cover;">
                 </div>
+            </div>
+        </div>
+        <div class="row g-5">
+            <div class="col">
+                <p class="mb-4">Want to get in touch? Please email <strong>dreambuildfitness@gmail.com.</strong></p>
             </div>
         </div>
     </div>
