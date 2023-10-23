@@ -41,21 +41,7 @@ h4 {
 
 /* newsletter */
 
-#mc_embed_signup input {
-    background: #000;
-    color: white;
-    border: 1px solid white;
-    border-radius: 2px;
-}
-
-#mc_embed_signup input:hover,
-#mc_embed_signup input:active,
-#mc_embed_signup input:focus {
-    background: white;
-    color: #000 !important;
-}
-
-#mc_embed_signup_scroll {
+#newsletter {
     color: white;
 }
 
