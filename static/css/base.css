@@ -41,8 +41,22 @@ h4 {
 
 /* newsletter */
 
-#newsletter {
+.newsletter {
     color: white;
+}
+
+.button {
+    background-color: #000;
+    color: white;
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+    background: white;
+    color: #000 ;
 }
 
 /* from Bulma */
