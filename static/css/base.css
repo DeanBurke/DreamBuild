@@ -42,21 +42,21 @@ h4 {
 /* newsletter */
 
 .newsletter {
-    color: white;
+    color: white !important;
 }
 
 .button {
-    background-color: #000;
-    color: white;
-    border: 1px solid white;
-    border-radius: 2px;
+    background-color: #000 !important;
+    color: white !important;
+    border: 1px solid white !important;
+    border-radius: 2px !important;
 }
 
 .button:hover,
 .button:active,
 .button:focus {
-    background: white;
-    color: #000 ;
+    background: white !important;
+    color: #000 !important;
 }
 
 /* from Bulma */
