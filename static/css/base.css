@@ -45,16 +45,16 @@ h4 {
     color: white !important;
 }
 
-.button {
+#mc_embed_signup .button {
     background-color: #000 !important;
     color: white !important;
     border: 1px solid white !important;
     border-radius: 2px !important;
 }
 
-.button:hover,
-.button:active,
-.button:focus {
+#mc_embed_signup .button:hover,
+#mc_embed_signup .button:active,
+#mc_embed_signup .button:focus {
     background: white !important;
     color: #000 !important;
 }
@@ -396,7 +396,7 @@ input[name='q']::placeholder {
 @media (max-width: 1250px) {
 
     body {
-        background-position: -700px 100px;
+        background-position: 70% 100%;
     }
 
 }
@@ -405,7 +405,7 @@ input[name='q']::placeholder {
 @media (max-width: 991px) {
 
     body {
-        background-position: -1000px 100px;
+        background-position: 70% 40%;
         height: calc(100vh - 116px);
     }
 
@@ -434,7 +434,7 @@ input[name='q']::placeholder {
     }
 
     #delivery-banner h4 {
-        font-size: .9rem;
+        font-size: 1.2rem;
     }
 
     .btn.btn-outline-black.rounded-0,
@@ -459,6 +459,19 @@ input[name='q']::placeholder {
 
     .products .card-img-top {
         height: 75vw;
+    }
+
+    body {
+        background-position: 75% 45%;
+    }
+
+}
+
+/* card adjustment on small  phone screens */
+@media (max-width: 375px) {
+
+    body {
+        background-position: 80% 50%;
     }
 
 }
