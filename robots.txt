@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /admin/
+Disallow: /bag/
+Disallow: /profiles/
+Disallow: /checkout/
+Sitemap: https://dreambuildfitness-7af9d60474bd.herokuapp.com/sitemap.xml
