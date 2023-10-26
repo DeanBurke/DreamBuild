@@ -24,15 +24,15 @@ As we embark on this exciting journey, let's explore how our platform leverages 
     * [Imagery](#imagery)
     * [Database Design](#database-design)
 * [Features](#features)
+    * [Main Header](#main-header)
     * [Navigation](#navigation)
     * [Hero Section](#hero-section)
-    * [About Section]()
-    * [](#challenge-section)
-    * [Contact Section](#contact-section)
-    * [Footer Section](#footer-section)
-    * [Back to top button](#back-to-top-button)
-    * [User Login / Register / Logout](#user-login--register--logout)
-    * [Bookings / Admin Portal](#bookings--admin-portal)
+    * [Footer](#footer)
+    * [About Us](#about-us)
+    * []()
+    * []()
+    * []()
+    * []()
     * [Future Features](#future-features)
 * [Testing](#testing)
     * [Manual Testing](#manual-testing)
@@ -304,3 +304,104 @@ Multiple apps and classes/models were created for the project, each one supporti
 ---
 
 # Features
+
+## Main Header
+
+* Featured at the top of the page and consistent throughout the website. Stays in place as scrolling.
+* Features the brand name located to the top left, which is clickable and returns the site user to the home page.
+
+    ![Screenshot of main header logo](./readme_assets/img/header-logo.jpg) <br>
+    *Screenshot of main header logo*
+
+* A functional searchbar is located centrally (will chat about functionality in the [Products Section](#products)) 
+
+    ![Screenshot of searchbar](./readme_assets/img/searchbar.jpg) <br>
+    *Screenshot of searchbar*
+
+* Located in the top right is a 'My Account' icon which is a dropdown menu along with a Bag icon that shows the site user's current bag total (will chat about both functionality in the [Account Section](#account) and [Bag Section](#bag) respectively)
+
+    ![Screenshot of account and bag icons](./readme_assets/img/account-bag-icons.jpg) <br>
+    *Screenshot of account and bag icons*
+
+* On smaller screens the logo disappears (being replaced with the navbar functionality) and the search bar turns into a dropdown function. 
+
+    ![Screenshot of mobile view of the header](./readme_assets/img/header-mobile-view.jpg) <br>
+    *Screenshot of mobile view of the header*
+
+* Just below the navbar there is a ticker stating the free delivery threshold.
+
+<br>
+
+## Navigation
+
+* Featured at the top of the page and consistent throughout the website. Stays in place as scrolling.
+
+    ![Screenshot of navigation bar on desktop](./readme_assets/img/navbar-desktop.jpg) <br>
+    *Screenshot of navigation bar on desktop*
+
+* Where neccessary, a dropdown menu is available to further specify a search. 
+
+    ![Screenshot of navigation bar dropdown on desktop](./readme_assets/img/navbar-desktop-dropdown.jpg) <br>
+    *Screenshot of navigation bar dropdown on desktop*
+
+* On smaller screens the navigation menu is hidden away, revealed when clicked the icon in the top left. Likewise the dropdown is available where neccessary.
+
+    ![Screenshot of navigation bar on mobile](./readme_assets/img/navbar-mobile.jpg) <br>
+    *Screenshot of navigation bar on mobile*
+
+    ![Screenshot of navigation bar dropdown on mobile](./readme_assets/img/navbar-mobile-dropdown.jpg) <br>
+    *Screenshot of navigation bar dropdown on mobile*
+
+<br>
+
+## Hero Section 
+
+
+* The Hero section contains one main Hero image, along with a Shop Now button to direct site users to the 'All Products' section and an inspirational message to site users on arrival.
+
+    ![Screenshot of hero section](./readme_assets/img/hero-section.jpg) <br>
+    *Screenshot of hero section*
+
+* When the site user hovers over the Shop Now button, it changes to a shade of grey mentioned above. 
+
+    ![Screenshot of hero section button](./readme_assets/img/hero-section-button.jpg) <br>
+    *Screenshot of hero section button*
+
+<br>
+
+## Footer
+
+* Located at the bottom of the majority of pages throughout the website. 
+* The footer is broke up into 4 sections, 3 across the top and the one section just below, following by a copyright tag. This then collapses, to being on top of one another on a mobile view. 
+* First section contains the brand name along with a mission statement. 
+
+    ![Screenshot of footer mission statement](./readme_assets/img/footer-mission-statement.jpg) <br>
+    *Screenshot of footer mission statement*
+
+* Second section is a selection of quick links for the site user to choose from to direct them to relative pages.
+
+    ![Screenshot of footer quick links](./readme_assets/img/footer-quick-links.jpg) <br>
+    *Screenshot of footer quick links*
+
+* Third section contains the company's social links, with a working (currently at the time of this write up) [Facebook page](https://www.facebook.com/profile.php?id=61552476312298). The icons reverse in colour when hovered over. 
+
+    ![Screenshot of footer social links](./readme_assets/img/footer-social-links.jpg) <br>
+    *Screenshot of footer social links*
+
+    ![Screenshot of footer social link swhen hovered](./readme_assets/img/footer-social-links-hover.jpg) <br>
+    *Screenshot of footer social links when hovered*
+
+
+* Fourth section contains newsletter subscription service, powered by [Mailchimp](https://mailchimp.com/), where the site user enters their email details to sign up for the company's newsletter
+
+    ![Screenshot of footer newsletter](./readme_assets/img/footer-newsletter.jpg) <br>
+    *Screenshot of footer newsletter section*
+
+<br>
+
+## About Us
+
+
+[Back to top &uarr;](#dreambuild-fitness)
+
+---
