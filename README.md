@@ -147,14 +147,160 @@ Meanwhile, our sitemap.xml file provides search engines with a structured map of
 
 ## Wireframes & Bootstrap Templates
 
+For the site design, I took inspiration from the Boutique Ado walkthrough project along with the [Gymshark](https://uk.gymshark.com/) and [ALLSAINTS](https://www.allsaints.com/men.html) website.
+
+Wireframes were created for the site with [Wireframe.cc](https://wireframe.cc/)
+
+![Screenshot of home page for desktop done on Wireframe.cc](./readme_assets/img/wireframes-desktop.jpg)
+
+<br>
+
+![Screenshot of products page for mobile done on Wireframe.cc](./readme_assets/img/wireframes-mobile.jpg)
+
+<br>
+
 ## Colour Scheme
+
+Colour palette was created using: 
+
+* [Colormind](http://colormind.io/)
+
+![Screenshot of colour palette done on colormind.io](./readme_assets/img/colormind.jpg)
+
+Along with a bright vibrant blue gradient for the Hero image. 
+
+<br>
 
 ## Typography
 
+Lato was chosen from [Google Fonts](https://fonts.google.com/).
+
+![Screenshot of Lato font from Google fonts](./readme_assets/img/fonts-lato.jpg)
+
+<br>
+
+
 ## Imagery
 
+Images are located throught the website. As the header/hero image, on the about page, and as products throughout. 
+
+Images were took from stock photo websites: 
+
+* [Pexels](https://www.pexels.com/)
+* [Freepik](https://www.freepik.com/)
+* [Unsplash](https://unsplash.com/)
+
+Along with some example of products took from various gym stores, as this is purely a fake website. (**No copyright infringement intended**):
+
+* [MyProtein](https://www.myprotein.com/)
+* [Gymshark](https://uk.gymshark.com/)
+* [Pursue Fitness](https://www.pursuefitness.com/)
+* [Decathalon](https://www.decathlon.co.uk/)
+* [Lifthing the Dream](https://www.liftingthedream.com/)
+* [Strength Shop](https://www.strengthshop.co.uk/)
+
+
+Icons were used throught the website, for buttons, menu layout, challenge section, contact seciont and for social links on the footer of the website. The icons used on the site were taken from: 
+
+* [Font Awesome](https://fontawesome.com/)
+* [Bootstrap](https://icons.getbootstrap.com/)
+
+<br>
+
 ## Database Design
+
+Multiple apps and classes/models were created for the project, each one supporting the full site functionality.
+
+* **About App** - No classes or models needed as just an about page
+
+* **Bag App** - No classes or models needed, primarily focused on bag calculations via context.py
+
+* **Checkout App** - Order and OrderLineItem models
+
+    * Order Model:
+
+    |Name           |Database Key   |Field Type     |Validation                                                                            |
+    |---------------|---------------|---------------|--------------------------------------------------------------------------------------|
+    |order_number   |order_number   |CharField      |max_length=32, null=False, editable=False                                             |
+    |user_profile   |user_profile   |ForeignKey     |'UserProfile', on_delete=models.SET_NULL, null=True, blank=True, related_name='orders'|
+    |full_name      |full_name      |CharField      |max_length=50, null=False, blank=False                                                |
+    |email          |email          |EmailField     |max_length=254, null=False, blank=False                                               |
+    |phone_number   |phone_number   |CharField      |max_length=20, null=False, blank=False                                                |
+    |country        |country        |CountryField   |blank_label='Country *', null=False, blank=False                                      |
+    |postcode       |postcode       |CharField      |max_length=20, null=True, blank=True                                                  |
+    |town_or_city   |town_or_city   |CharField      |max_length=40, null=False, blank=False                                                |
+    |street_address1|street_address1|CharField      |max_length=80, null=False, blank=False                                                |
+    |street_address2|street_address2|CharField      |max_length=80, null=True, blank=True                                                  |
+    |county         |county         |CharField      |max_length=80, null=True, blank=True                                                  |
+    |date           |date           |DateTimeField  |auto_now_add=True                                                                     |
+    |delivery_cost  |delivery_cost  |DecimalField   |max_digits=6, decimal_places=2, null=False, default=0                                 |
+    |order_total    |order_total    |DecimalField   |max_digits=10, decimal_places=2, null=False, default=0                                |
+    |grand_total    |grand_total    |DecimalField   |max_digits=10, decimal_places=2, null=False, default=0                                |
+    |original_bag   |original_cart  |TextField      |null=False, blank=False, default=''                                                   |
+    |stripe_pid     |stripe_pid     |CharField      |max_length=254, null=False, blank=False, default=''                                   |
+
+    <br>
+
+    * OrderLineItem Model:
+
+    |Name           |Database Key   |Field Type     |Validation                                                                          |
+    |---------------|---------------|---------------|------------------------------------------------------------------------------------|
+    |order          |order          |ForeignKey     |'Order', null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems'|
+    |product        |product        |ForeignKey     |'Product', null=False, blank=False, on_delete=models.CASCADE                        |
+    |product_size   |product_size   |CharField      |max_length=2, null=True, blank=True                                                 |
+    |quantity       |quantity       |IntegerField   |null=False, blank=False, default=0                                                  |
+    |lineitem_total |lineitem_total |DecimalField   |max_digits=6, decimal_places=2, null=False, blank=False, editable=False             |
+
+    
+    <br>
+
+* **DreamBuild** - Main app
+
+* **Home App** - No classes or models needed as it is the index page
+
+* **Products App** - Category and Product models
+
+    * Category Model:  
+
+    | Name          | Database Key  | Field Type    | Validation                            |
+    | ------------- | ------------- | ------------- | ------------------------------------- |
+    | name          | name          | CharField     | max_length=254                        |
+    | friendly_name | friendly_name | CharField     | max_length=254, null=True, blank=True |
+
+    <br>
+
+    * Product Model:
+
+    | Name        | Database Key  | Field Type        | Validation                                                   |
+    | ----------- | ------------- | ----------------- | ------------------------------------------------------------ |
+    | category    | category      | ForeignKey        | 'Category', null=True, blank=True, on_delete=models.SET_NULL |
+    | sku         | sku           | CharField         | max_length=254, null=True, blank=True                        |
+    | name        | name          | CharField         | max_length=254                                               |
+    | description | description   | TextField         |                                                              |
+    | has_sizes   | has_sizes     | BooleanField      | default=False, null=True, blank=True                         |
+    | price       | price         | DecimalField      | max_digits=6, decimal_places=2                               |
+    | rating      | rating        | DecimalField      | max_digits=6, decimal_places=2, null=True, blank=True        |
+    | image       | image         | ImageField        | null=True, blank=True                                        |
+
+    <br>
+
+* **Profiles App** - UserProfile model
+
+    * UserProfile Model:  
+
+| Name                   | Database Key            | Field Type        | Validation                                   |
+| ---------------------- | ----------------------- | ----------------- | -------------------------------------------- |
+| user                   | user                    | OneToOneField     | 'User', on_delete=models.CASCADE             |
+| default_phone_number   | default_phone_number    | CharField         | max_length=20, null=True, blank=True         |
+| default_street_address1| default_street_address1 | CharField         | max_length=80, null=True, blank=True         |
+| default_street_address2| default_street_address2 | CharField         | max_length=80, null=True, blank=True         |
+| default_town_or_city   | default_town_or_city    | CharField         | max_length=40, null=True, blank=True         |
+| default_county         | default_county          | CharField         | max_length=80, null=True, blank=True         |
+| default_postcode       | default_postcode        | CharField         | max_length=20, null=True, blank=True         |
+| default_country        | default_country         | CountryField      | blank_label='Country', null=True, blank=True |
 
 [Back to top &uarr;](#dreambuild-fitness)
 
 ---
+
+# Features
