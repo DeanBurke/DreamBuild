@@ -39,9 +39,10 @@ As we embark on this exciting journey, let's explore how our platform leverages 
     * [Other](#other)
     * [Future Features](#future-features)
 * [Technology Used](#technology-used)
+    * [Languages Used](#languages-used)
+    * [Django and Python Packages](#django-and-python-packages)
+    * [Programs / Tools Used](#programs--tools-used)
 * [Testing](#testing)
-    * [Manual Testing](#manual-testing)
-    * [Future Testing](#future-testing)
 * [Bugs](#bugs)
 * [Validator Testing](#validator-testing)
 * [Deployment](#deployment)
@@ -708,3 +709,155 @@ Multiple apps and classes/models were created for the project, each one supporti
 ---
 
 # Technology Used
+
+## Languages Used
+
+* **HTML** - For adding content and formatting.
+* **CSS** - For adding style and colours.
+* **JavaScript** - For adding interactive features.
+* **Python** - High-level, general-purpose programming language.
+
+<br>
+
+## Django and Python Packages
+
+* **asgiref** - ASGI is a standard for Python asynchronous web apps and servers to communicate with each other, and positioned as an asynchronous successor to WSGI. 
+* **boto3** - Amazon Web Services (AWS) Software Development Kit (SDK) for Python, which allows Python developers to write software that makes use of services like Amazon S3 and Amazon EC2.
+* **botocore** - A low-level interface to a growing number of Amazon Web Services. 
+* **dj-database-url** - This simple Django utility allows you to utilize the 12factor inspired DATABASE_URL environment variable to configure your Django application.
+* **Django** - A Python-based web framework that follows the model-template-view architectural pattern, used for building the project.
+* **django-allauth** - Integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication.
+* **django-countries** - A Django application that provides country choices for use with forms, flag icons static files, and a country field for models.
+* **django-crispy-forms** - A Django application that makes it easy to style Django forms.
+* **django-storages** - Is a project to provide a variety of storage backends in a single library.
+* **gunicorn** - A Python Web Server Gateway Interface (WSGI) HTTP server.
+* **jmespath** - Allows you to declaratively specify how to extract elements from a JSON document.
+* **oauthlib** - Is a framework which implements the logic of OAuth1 or OAuth2 without assuming a specific HTTP request object or web framework.
+* **Pillow** - A Python Imaging Library adds image processing capabilities to your Python interpreter.
+* **psycopg2** - A PostgreSQL adapter for Python.
+* **python3-openid** - Is a set of Python packages to support use of the OpenID decentralized identity system in your application.
+* **pytz** - This library allows accurate and cross platform timezone calculations using Python 2.4 or higher.
+* **requests-oauthlib** - This project provides first-class OAuth library support for Requests.
+* **s3transfer** - S3transfer is a Python library for managing Amazon S3 transfers. This project is maintained and published by Amazon Web Services
+* **sqlparse** - Is a non-validating SQL parser for Python. It provides support for parsing, splitting and formatting SQL statements.
+* **stripe** - A Python library for the Stripe API.
+
+<br>
+
+## Programs / Tools Used
+
+* **Amazon AWS** - Used to store the static and media files for the site.
+* **Bootstrap5**- Used for adding predefined styled elements and creating responsiveness.
+* **Chrome DevTools** - For debugging the project.
+* **CI Python Linter** - Used for validating the python code.
+* **CSS Jigsaw CSS Validator** - Used for validating the CSS.
+* **ElephantSQL** - Free and open-source relational database management system (RDBMS).
+* **Font Awesome** - Font Awesome use to source necessary icons used in the project.
+* **GifCap** - Used to capture gif-s of the project.
+* **GitHub** - Source code hosted on GitHub, deployed using Git Pages.
+* **GitPod** - Used to commit, comment and push code during the development process.
+* **Google Fonts** - Used to import fonts to the project.
+* **Heroku**- Used to deploy the project.
+* **HTML W3C HTML Validator** - Used for validating the HTML.
+* **JsHint**- Used for validating the javascript code.
+* **LightHouse** - Used for testing performance.
+* **Mailchimp** - Used to create the newsletter signup form.
+* **Stripe** has been used for the payment processing and webhooks handling.
+*** Temp-Mail.org** - Used for creating temporary email addresses. 
+* **Wireframe.cc** - Used to create wireframes and website structure map for the project.
+
+
+
+[Back to top &uarr;](#dreambuild-fitness)
+
+---
+
+# Testing 
+
+## Manual Testing
+
+**Main Header**
+
+*
+*
+*
+*
+*
+
+**Navigation**
+
+*
+*
+*
+*
+*
+
+**Hero Section**
+
+*
+*
+*
+*
+*
+
+**Footer**
+
+*
+*
+*
+*
+*
+
+**About Us**
+
+*
+*
+*
+*
+*
+
+**Products Page**
+
+*
+*
+*
+*
+*
+
+**Account**
+
+*
+*
+*
+*
+*
+
+**Bag**
+
+*
+*
+*
+*
+*
+
+**Checkout**
+
+*
+*
+*
+*
+*
+
+**Admin**
+
+*
+*
+*
+*
+*
+
+<br>
+
+[Back to top &uarr;](#dreambuild-fitness)
+
+---
