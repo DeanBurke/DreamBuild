@@ -30,7 +30,9 @@ As we embark on this exciting journey, let's explore how our platform leverages 
     * [Footer](#footer)
     * [About Us](#about-us)
     * [Products Page](#products-page)
-    * []()
+    * [Account](#account)
+    * [Bag](#bag)
+    * [Checkout](#checkout)
     * []()
     * []()
     * [Future Features](#future-features)
@@ -407,8 +409,8 @@ Multiple apps and classes/models were created for the project, each one supporti
 
 * There is also a "Join Today!" button, directing the site user to the Plans page
 
-![Screenshot of about us page](./readme_assets/gifs/about.gif) <br>
-    *Screenshot of about us page*
+![Gif of about us page](./readme_assets/gifs/about.gif) <br>
+    *Gif of about us page*
 
 <br>
 
@@ -463,6 +465,99 @@ Multiple apps and classes/models were created for the project, each one supporti
 
     ![Screenshot of plans](./readme_assets/img/plans.jpg)<br>
     *Screenshot of plans*
+
+<br>
+
+## Account
+
+* When the site user clicks "My Account" they will have the option to Register or Login. 
+
+    ![Screenshot of account](./readme_assets/img/account.jpg)<br>
+    *Screenshot of account options*
+
+* When a new user registers, they will have to input an email address, username and password. Before being asked to verify the email address before proceeding. 
+
+    ![Screenshot of account registering](./readme_assets/img/account-register.jpg)<br>
+    *Screenshot of account registering*
+
+    ![Screenshot of account verification message](./readme_assets/img/account-verify.jpg)<br>
+    *Screenshot of account verification message*
+
+* The new user will then receive an email confirmation to finalize their registeration - and will be prompted to confirm the email address. They will then be asked to sign in again. 
+
+    ![Screenshot of account email confirmation](./readme_assets/img/account-email.jpg)<br>
+    *Screenshot of account email confirmation*
+
+    ![Screenshot of account confirmation message](./readme_assets/img/account-confirm.jpg)<br>
+    *Screenshot of account confirmation message*
+
+* Once signed in the options will change to My Profile and Logout. 
+
+    ![Screenshot of account signed in](./readme_assets/img/account-signed-in.jpg)<br>
+    *Screenshot of account signed in*
+
+* On the My Profile page the user will be able to save/update delivery details and see their order history. 
+
+    ![Screenshot of my profile](./readme_assets/img/account-myprofile.jpg)<br>
+    *Screenshot of my profile*
+
+* When the admin is logged in, they will have an aditional option available which is Product Management. Here they will be able to add new products with ease. 
+
+    ![Screenshot of account admin](./readme_assets/img/account-admin.jpg)<br>
+    *Screenshot of account admin*
+
+    ![Screenshot of product management](./readme_assets/img/account-product-management.jpg)<br>
+    *Screenshot of product management*
+
+* The admin will have further options available to edit/delete products already on the website. Where if edited it will bring up the pre loaded information on the Product Management page. ***Please note, clicking delete will delete the product without a prompt**
+
+    ![Screenshot of account admin product view](./readme_assets/img/account-admin-product.jpg)<br>
+    *Screenshot of account admin product view*
+
+    ![Screenshot of product management- edit](./readme_assets/img/account-product-management-edit.jpg)<br>
+    *Screenshot of product management - edit*
+
+<br>
+
+## Bag
+
+* When a site user adds an item to their bag, they will get a notification that the item is not sitting in their bag, along with a small summary, which also shows how much more they need to spend for free delivery. 
+
+    ![Screenshot of bag - delivery charge](./readme_assets/img/bag-delivery.jpg)<br>
+    *Screenshot of bag - delivery charge*
+
+* On the bag page itself the shopper will be able to adjust the quantity of the item or choose to remove it. 
+
+    ![Screenshot of bag page - delivery charge](./readme_assets/img/bag-page-delivery.jpg)<br>
+    *Screenshot of bag page - delivery charge*
+
+* Once the value hits the the free delivery threshold, the delivery charge will be zero. 
+
+    ![Screenshot of bag page - free delivery](./readme_assets/img/bag-page-freedelivery.jpg)<br>
+    *Screenshot of bag page - free delivery*
+
+* The shopper's bag total will stay visible throught their visit on the website in the top right.
+
+    ![Screenshot of bag icon](./readme_assets/img/bag-icon.jpg)<br>
+    *Screenshot of bag icon*
+
+* If the shopper removes an item from the bag, they will get a notification of this change. 
+
+    ![Screenshot of bag - removed item](./readme_assets/img/bag-remove.jpg)<br>
+    *Screenshot of bag - removed item*
+
+* On smaller screens the bag stacks for a better user experience, with the total being placed on top. A back to top button has been added for ease when making a big purchase! 
+
+    ![Screenshot of bag - smaller screens](./readme_assets/img/bag-smaller-screen.jpg) <br>
+    *Screenshot of bag - smaller screens*
+
+    ![Screenshot of bag - mobile view](./readme_assets/img/bag-mobile.jpg) <br>
+    *Screenshot of bag - mobile view*
+
+<br>
+
+## Checkout
+
 
 [Back to top &uarr;](#dreambuild-fitness)
 
