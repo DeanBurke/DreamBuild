@@ -35,9 +35,10 @@ As we embark on this exciting journey, let's explore how our platform leverages 
     * [Account](#account)
     * [Bag](#bag)
     * [Checkout](#checkout)
-    * []()
-    * []()
+    * [Admin](#admin)
+    * [Other](#other)
     * [Future Features](#future-features)
+* [Technology Used](#technology-used)
 * [Testing](#testing)
     * [Manual Testing](#manual-testing)
     * [Future Testing](#future-testing)
@@ -625,6 +626,85 @@ Multiple apps and classes/models were created for the project, each one supporti
 
 ## Admin
 
+* If the admin is logged in - they will be able to directly go to the admin portal via the options on the "My Account"
+
+    ![Screenshot of account admin](./readme_assets/img/account-admin.jpg)<br>
+    *Screenshot of account admin*
+
+* Once there they will have a variety of options available to them. Can manually verify email addressesor or delete users that have been created. 
+
+    ![Screenshot of admin options](./readme_assets/img/admin-options.jpg)<br>
+    *Screenshot of admin options*
+
+* The admin can view available categories, along with edit and add new categories.
+
+    <details>
+    <summary>Admin - Category Section</summary>
+
+    ![Screenshot of admin categories](./readme_assets/img/admin-category.jpg)<br>
+    *Screenshot of admin categories*
+
+    ![Screenshot of admin categories - edit](./readme_assets/img/admin-category-edit.jpg)<br>
+    *Screenshot of admin categories - edit*
+
+    ![Screenshot of admin categories - add](./readme_assets/img/admin-category-add.jpg)<br>
+    *Screenshot of admin categories - add*
+
+    </details>
+
+<br> 
+
+* The admin can view available categories, along with edit and add new categories.
+
+    <details>
+    <summary>Admin - Product Section</summary>
+
+    ![Screenshot of admin products](./readme_assets/img/admin-products.jpg)<br>
+    *Screenshot of admin products*
+
+    ![Screenshot of admin products - edit](./readme_assets/img/admin-products-edit.jpg)<br>
+    *Screenshot of admin products - edit*
+
+    ![Screenshot of admin products - add](./readme_assets/img/admin-products-add.jpg)<br>
+    *Screenshot of admin products - add*
+
+    </details>
+
+<br> 
+
+* Both sections have an option to go into their corresponding history, to view previous changes. 
+
+    ![Screenshot of admin history](./readme_assets/img/admin-history.jpg)<br>
+    *Screenshot of admin history*
+
+<br>
+
+## Other
+
+* Throughout the website there a custom messages to the site user of various events. To let them know of the even that has just happened. 
+
+    ![Screenshot of toast-success](./readme_assets/img/toast-success.jpg) ![Screenshot of toast-error](./readme_assets/img/toast-error.jpg) ![Screenshot of toast-alert](./readme_assets/img/toast-alert.jpg)<br>
+    *Screenshot of website messages*
+
+* There is a custom Error 404 page to not take away from the user experience of the website. 
+
+    ![Screenshot of error404](./readme_assets/img/error404.jpg)<br>
+    *Screenshot of custom error404 page*
+
+<br>
+
+## Future Features
+
+* A community related page where signed in users can create questions or give feedback on certain training splits etc. 
+
+* The ability to leave comments on products and ratings
+
+* Add Social sign-in options (Google, GitHub, Facebook)
+
+* Discout code feature / Support an Affiliate codes
+
 [Back to top &uarr;](#dreambuild-fitness)
 
 ---
+
+# Technology Used
