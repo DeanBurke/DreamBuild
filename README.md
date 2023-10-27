@@ -29,7 +29,7 @@ As we embark on this exciting journey, let's explore how our platform leverages 
     * [Hero Section](#hero-section)
     * [Footer](#footer)
     * [About Us](#about-us)
-    * []()
+    * [Products Page](#products-page)
     * []()
     * []()
     * []()
@@ -401,6 +401,68 @@ Multiple apps and classes/models were created for the project, each one supporti
 
 ## About Us
 
+* On arrival to the About Us page, a counter begins to run with the current clients total. 
+
+* There is a brief description on brand's values and its hopes for any future clients - while also offering highend gym clothing. 
+
+* There is also a "Join Today!" button, directing the site user to the Plans page
+
+![Screenshot of about us page](./readme_assets/gifs/about.gif) <br>
+    *Screenshot of about us page*
+
+<br>
+
+## Products Page
+
+* The products are split across various categories and options within the navbar to allow the site user a more effiecient experience while browsing. 
+
+    ![Screenshot of products dropdown](./readme_assets/img/products-allproducts-dropdown.jpg) ![Screenshot of clothing dropdown](./readme_assets/img/products-clothing-dropdown.jpg) ![Screenshot of accessories dropdown](./readme_assets/img/products-accessories-dropdown.jpg)<br>
+    *Screenshot of dropdown options*
+
+* To add a more user friendly experience, a sort bar is located on top right (middle on smaller screens).
+
+    ![Screenshot of sorting dropdown](./readme_assets/img/products-sorting.jpg)<br>
+    *Screenshot of sorting dropdown*
+
+* Also while on the "All Products", "All Clothing & "All Accessories" pages, the site user will have another option to select a category with a button at the top of the page. 
+
+    ![Screenshot of clothing categories](./readme_assets/img/products-clothing-category.jpg)<br>
+    *Screenshot of clothing categories*
+
+* Also the site user can search for a product they have in mind - which will go through the name/description of the products for the relevant results. It will also return no prouducts if the search criteria doesn't have any relative results. 
+
+    ![Screenshot of search results](./readme_assets/img/products-search.jpg)<br>
+    *Screenshot of search results*
+
+    ![Screenshot of search no results](./readme_assets/img/products-search-noresults.jpg)<br>
+    *Screenshot of search no results*
+
+* Underneath each product image, will have the price, category and rating. 
+
+    ![Screenshot of product info](./readme_assets/img/products-info.jpg)<br>
+    *Screenshot of product info*
+
+* On the individual the product item pages, a further description of the product along with the option of sizes and quantity to choose from before adding it to bag, or they have choice to go back to the main products page.
+
+    ![Screenshot of product details](./readme_assets/img/products-details.jpg)<br>
+    *Screenshot of product details*
+
+* Where no sizes are applicable, the size option will be removed from the product item page. 
+
+    ![Screenshot of product details with no sizes](./readme_assets/img/products-details-no-sizes.jpg)<br>
+    *Screenshot of product details with no sizes*
+
+* While on the product pages, there is a back to top button located in the bottom right for more user friendly experience. 
+
+    ![Screenshot of back to top button](./readme_assets/img/products-backtotop.jpg)<br>
+    *Screenshot of back to top button*
+
+### Plans
+
+* There are 4 plans to choose from, which vary from duration / price. The user will be contacted once payment is confirmed, then contacted regarding a start date. 
+
+    ![Screenshot of plans](./readme_assets/img/plans.jpg)<br>
+    *Screenshot of plans*
 
 [Back to top &uarr;](#dreambuild-fitness)
 
