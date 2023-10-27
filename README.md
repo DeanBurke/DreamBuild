@@ -2,7 +2,9 @@
 
 Welcome to my Project 5 for Code Institute's Full-Stack Development Program  – DreamBuild Fitness, where we combine cutting-edge technology and expert fitness solutions to create a dynamic and engaging B2C experience. Powered by a robust stack of HTML, CSS, JavaScript, Python, and Django, DreamBuild Fitness is not just a fitness website; it's a testament to the seamless integration of technology and wellness. 
 
-As we embark on this exciting journey, let's explore how our platform leverages these technologies, including Stripe, to offer you an exceptional fitness, shopping, and community-building experience, all in one place. Stripe, a secure and efficient payment gateway, ensures your transactions are smooth and hassle-free as you invest in your fitness journey with us.
+As we embark on this exciting journey, let's explore how our platform leverages these technologies, including Stripe, to offer you an exceptional fitness, shopping, and community-building experience, all in one place. Stripe*, a secure and efficient payment gateway, ensures your transactions are smooth and hassle-free as you invest in your fitness journey with us.
+
+**[Please see below on info for checking out](#stripe)*
 
 ![Screenshot of the site on Am I responsive](./readme_assets/img/am-i-responsive.jpg)
 
@@ -558,6 +560,70 @@ Multiple apps and classes/models were created for the project, each one supporti
 
 ## Checkout
 
+* The checkout is split into two sections, the details form and an order summary of the shopper's bag. The shopper can checkout as a guest but will get a prompty if they want to create an account or login
+
+    ![Screenshot of checkout - guest](./readme_assets/img/checkout-guest.jpg) <br>
+    *Screenshot of checkout - guest*
+
+* If the user is signed in, the will have an option to save their delivery information to their profile for future purchases. 
+
+    ![Screenshot of checkout - signed in](./readme_assets/img/checkout-signedin.jpg) <br>
+    *Screenshot of checkout - signed in *
+
+* They'll get a notifaction if anything on the form isn't correctly filled out, including card details which is powered by Stripe. 
+
+    ![Screenshot of checkout - invalid card](./readme_assets/img/checkout-invalid-card.jpg) <br>
+    *Screenshot of checkout - invalid card*
+
+<hr>
+
+### Stripe 
+
+* **To test the checkout please use the following card information** <br>
+
+    * 4242 4242 4242 4242 (card number)
+    * 04/24 (MM/YY) - *or any future date*
+    * 242 or 424 (CVC) - *or any 3 digit entry*
+    * 42424 (post code) - *or any 5 digit entry*
+
+<hr>
+
+<br> 
+
+* Once the user clicks complete order with valid form information, a loading overlay before arriving at a checkout success page with a summary of the order and a succes message
+
+    ![Screenshot of checkout - loading](./readme_assets/img/checkout-loading.jpg) <br>
+    *Screenshot of checkout - loading*
+
+    ![Screenshot of checkout - success](./readme_assets/img/checkout-success.jpg) <br>
+    *Screenshot of checkout - success*
+
+    ![Screenshot of checkout - order summary](./readme_assets/img/checkout-success2.jpg) <br>
+    *Screenshot of checkout - order summary*
+
+* The shopper will get an email confirmation of the purchase. 
+
+    ![Screenshot of checkout - email confirmation](./readme_assets/img/checkout-email.jpg) <br>
+    *Screenshot of checkout - email confirmation*
+
+* There will be confirmation on Stripe that the payment went through. 
+
+    ![Screenshot of checkout - stripe](./readme_assets/img/checkout-stripe.jpg) <br>
+    *Screenshot of checkout - stripe*
+
+* The user if logged in while ordering can visit their profile and view previous orders. 
+
+    ![Screenshot of checkout - profile](./readme_assets/img/checkout-profile.jpg) <br>
+    *Screenshot of checkout - profile afterwards*
+
+* On smaller screens the checkout menu is stacked. 
+
+    ![Screenshot of checkout - mobile](./readme_assets/img/checkout-mobile.jpg) <br>
+    *Screenshot of checkout - mobile*
+
+<br>
+
+## Admin
 
 [Back to top &uarr;](#dreambuild-fitness)
 
