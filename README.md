@@ -778,83 +778,82 @@ Multiple apps and classes/models were created for the project, each one supporti
 
 **Main Header**
 
-*
-*
-*
-*
-*
+* Tested to make sure header stays in place when scrolling, right across the website.
+* Tested to make sure Logo, is clickable and brings the user back to the home page. 
+* Tested to make sure the searchbar functionality works, and gives the user relevant results, or none if applicable.
+* Tested to make sure all of the above is functional on smaller screens, and collapses down where neccessary. 
 
 **Navigation**
 
-*
-*
-*
-*
-*
+* Tested to make all dropdown choices work smoothly 
+* Tested to make sure all links flow through to their respective pages. 
+* Tested to make sure navigation bar collapes on smaller screens with the dropdown functionality still working.
 
 **Hero Section**
 
-*
-*
-*
-*
-*
+* Tested to make sure the 'SHOP NOW' button directs the site user to the All Products section
+* Tested to make sure the background image stays the main focus on all screen sizes*
 
 **Footer**
 
-*
-*
-*
-*
-*
+* Tested to make sure the footer is at the bottom of all pages that it is featured on.
+* Tested to make sure all quick links bring you to the correct page. 
+* Tested to make sure all social links open on a new tab.
+* Tested to make sure the facebook link brings the user to the company's business page.
+* Tested to make sure Mailchimp's newsletter functionality works. 
+* Tested to make sure the footer stacks on smaller screens. 
 
 **About Us**
 
-*
-*
-*
-*
-*
+* Tested to make sure client counter loads correctly on page load up.
+* Tested to make sure the 'Join Today!' button directs the user to the Plans page. 
+* Tested to make sure the page stacts correctly on smaller screens.
 
 **Products Page**
 
-*
-*
-*
-*
-*
+* Tested to make sure the 'Sort by' functionality works on all pages. 
+* Tested to make sure the additional category buttons while on the "All Products", "All Clothing & "All Accessories" pages, all work correctly. 
+* Tested to make sure the edit/delete buttons are visible only when logged in as a Superuser / Admin. When edit is clicked it'll pre load the Product Management page with the products information before updating. 
+* Tested to make sure the size option is only visible on products where it is needed. 
+* Tested to make sure the products stack to a suitable amount depending on screen size. 
+* Tested to make sure the Back To Top button works correctly. 
 
 **Account**
 
-*
-*
-*
-*
-*
+* Tested to make sure the 'My Account' dropdown options are available regardless on the page the user is on. 
+* Tested to make sure the user needs to input correct/sufficient information while setting up an account, or they'll be prompted with their error. 
+* Tested to make sure the user gets an email confirmation link sent, and works correctly to verify their email address. 
+* Tested to make sure the options change once the user is logged in, and they are different from a standard member to a Superuser / Admin. 
+* Tested to make sure the My Profile page works as it should and can update the user's delivery information, and the can view prior orders.
+* Tested to make sure the Product Management option works and brings the Admin, to the relavant page and the form works correctly. 
+* Tested to make sure the Admin Portal directs the Admin straight to the correct page. 
 
 **Bag**
 
-*
-*
-*
-*
-*
+* Tested to make sure the Bag total is available and accurate regardless on the page the user is on.
+* Tested to make sure when an item it is added it shows a summary with a success message.
+* Tested to make sure the update and remove buttons and functionality work correctly. 
+* Tested to make sure the delivery charge logic works correctly depending on how much(£) is in the bag. 
+* Tested to make sure the bag page stacks correctly on smaller screens. 
 
 **Checkout**
 
-*
-*
-*
-*
-*
+* Tested to make sure the information submitted needs to be in the correct format. 
+* Tested to make sure the option to login, and thus save the user's delivery details as an option works correctly. 
+* Tested to make sure the loading overlay initiates once the 'Complete Order' button is pressed and the user is directed to a success page with an order confirmation and an email sent to the inbox. 
+* Tested to make sure payment is received on Stripe via webhooks, and are successful. 
+* Tested to make sure the checkout page stacks correctly on smaller screens. 
 
 **Admin**
 
+* Tested to make sure the Admin can create, edit or delete Orders/Categories/Products/Users 
+* Tested to make sure the history of any edit is visible. 
 *
-*
-*
-*
-*
+
+**Other**
+
+* Tested to make sure Toast messages are working correctly depending on the event that has happened. 
+* Tested to make sure that any page that isn't on the website, but manually typed into the URL, results in the custom 404 page being shown.
 
 <br>
 
@@ -907,6 +906,10 @@ Multiple apps and classes/models were created for the project, each one supporti
 
 * HTML
     * No errors were returned when running my final test of [W3C Validator](https://validator.w3.org/#validate_by_input)
+
+    ![Screenshot of W3C Validator Results](./readme_assets/img/validator.jpg)<br>
+    *Screenshot of W3C Validator Results*
+
 * CSS
     * No errors were returned when running my final test of [Jigsaw Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
 
