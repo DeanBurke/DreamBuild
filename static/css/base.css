@@ -339,34 +339,31 @@ input[name='q']::placeholder {
 }
 
 #delivery-banner {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    padding-left: 100%;
+    box-sizing: content-box;
+  }
   
-  position: fixed;
-  width: 100%;
-  overflow: hidden;
-  padding-left: 100%;
-  box-sizing: content-box;
-
-  .ticker {
-
+  #delivery-banner .ticker {
     display: inline-block;
     white-space: nowrap;
     padding-right: 100%;
     box-sizing: content-box;
-
-    -webkit-animation-iteration-count: infinite; 
-            animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
-   -webkit-animation-name: ticker;
-           animation-name: ticker;
+    animation-timing-function: linear;
+    -webkit-animation-name: ticker;
+    animation-name: ticker;
     -webkit-animation-duration: 30s;
-            animation-duration: 30s;
-
-    &__item {
-        display: inline-block;
-        }
+    animation-duration: 30s;
   }
-}
+  
+  #delivery-banner .ticker__item {
+    display: inline-block;
+  }
 
 /* -------------------------------- Media Queries */
 

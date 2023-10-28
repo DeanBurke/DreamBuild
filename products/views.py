@@ -33,7 +33,7 @@ def all_products(request):
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
-            
+
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
@@ -45,7 +45,7 @@ def all_products(request):
                 messages.error(request, "You didn't enter \
                 any search criteria!")
                 return redirect(reverse('products'))
-            
+
             queries = (
                 Q(name__icontains=query) | Q(description__icontains=query)
             )
@@ -94,7 +94,7 @@ def add_product(request):
                 Please ensure the form is valid.')
     else:
         form = ProductForm()
-        
+
     template = 'products/add_product.html'
     context = {
         'form': form,

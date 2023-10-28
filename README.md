@@ -874,7 +874,10 @@ Multiple apps and classes/models were created for the project, each one supporti
 * HTML
     * No errors were returned when running my final test of [W3C Validator](https://validator.w3.org/#validate_by_input)
 * CSS
-    * 
+    * No errors were returned when running my final test of [Jigsaw Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
+
+    ![Screenshot of Jigsaw Validator Results](./readme_assets/img/jigsaw.jpg)<br>
+    *Screenshot of Jigsaw Validator Results*
 
 <br> 
 
@@ -884,7 +887,7 @@ Multiple apps and classes/models were created for the project, each one supporti
 <br>
 
 * Python
-    * Passed my code through the [PEP8 checker](https://pep8ci.herokuapp.com/) created by Code Institute, no errors found.
+    * Passed my code through the [PEP8 checker](https://pep8ci.herokuapp.com/) created by Code Institute, while also using flake8 within GitPod to remove errors.
 
 <br>
 
