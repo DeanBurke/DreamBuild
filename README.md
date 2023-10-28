@@ -864,6 +864,40 @@ Multiple apps and classes/models were created for the project, each one supporti
 
 # Bugs  
 
+## Resolved Bugs
+
+* **Background Image**
+
+    * When initially styling the background image, I wanted to make sure it was a focal point on all screen sizes. 
+    * I had set the background position using a pixel format, eg <br>
+    `background-position: -400px 500px;`    
+    * As it went down the the screen size, I adjusted accordingly. Which worked fine when I was looking through Google Chrome's Dev Tools on the responsive view and slowing making the screen smaller.
+    * However when the website was deployed and checked through the screen sizes, the background image became not visible. 
+    * To fix this I switched to a % format, which seemed to work smoothly. Eg<br>
+    `background-position: 70% 40%;`  
+
+* **Product images**
+
+    * As some of these images varied in sizes, this resulted in different heights being shown on the corresponding product, clothing and accessories pages. I initially did a fix within CSS, but this had a knock on issue on the product details page. 
+    * To get around this I used the following code found from [StackOverflow](https://stackoverflow.com/):<br>
+    `.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+    }`
+    * Which was a brilliant fix as it enabled zoom to prevent any image stretching. 
+
+* **Mailchimp Newsletter CSS**
+
+    * I was having issues initially styling without taking away from any of the core components, I was trying different classes etc but it was getting overrided. 
+    * Annoyingly it was a quick fix in the end to resolve this, by just using the classes that were being took from Mailchimp's core css, and using:<br>
+     `!important`
+
+## Unresolved Bugs 
+
+* No known bugs present in the project at the time of writing this readme/testing.
+
+<br> 
 
 [Back to top &uarr;](#dreambuild-fitness)
 
@@ -883,11 +917,14 @@ Multiple apps and classes/models were created for the project, each one supporti
 
 * Accessibility
     * Using lighthouse in Chrome Dev Tools, I confirmed that colors and fonts were readable against backgrounds. <br>
+
+    ![Screenshot of Lighthouse Results](./readme_assets/img/lighthouse.jpg)<br>
+    *Screenshot of Lighthouse Results*
      
 <br>
 
 * Python
-    * Passed my code through the [PEP8 checker](https://pep8ci.herokuapp.com/) created by Code Institute, while also using flake8 within GitPod to remove errors.
+    * Passed my code through the [PEP8 checker](https://pep8ci.herokuapp.com/) created by Code Institute, while also using **flake8** within GitPod to remove errors.
 
 <br>
 
