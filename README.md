@@ -861,3 +861,33 @@ Multiple apps and classes/models were created for the project, each one supporti
 [Back to top &uarr;](#dreambuild-fitness)
 
 ---
+
+# Bugs  
+
+
+[Back to top &uarr;](#dreambuild-fitness)
+
+---
+
+# Validator Testing  
+
+* HTML
+    * No errors were returned when running my final test of [W3C Validator](https://validator.w3.org/#validate_by_input)
+* CSS
+    * 
+
+<br> 
+
+* Accessibility
+    * Using lighthouse in Chrome Dev Tools, I confirmed that colors and fonts were readable against backgrounds. <br>
+     
+<br>
+
+* Python
+    * Passed my code through the [PEP8 checker](https://pep8ci.herokuapp.com/) created by Code Institute, no errors found.
+
+<br>
+
+[Back to top &uarr;](#dreambuild-fitness)
+
+---
