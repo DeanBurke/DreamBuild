@@ -1353,3 +1353,33 @@ Multiple apps and classes/models were created for the project, each one supporti
 ---
 
 # Credits
+
+* I used a lot of code learned from various projects throughtout the PP4 stage and the PP5 Stage.
+
+    * Bootstrap Resume
+
+    * Flask walkthrough project
+
+    * Hello Django
+
+    * Boutique Ado
+
+* I used the [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/) documentation pages throughout this project, which were extremely helpful for styling. 
+
+* Slack was used throughout the project, as small issues arose. Previous students having similar queries really assited me as the solution was talked through my other helpful members of [Code Institute](https://codeinstitute.net/).
+
+* [StackOverflow](https://stackoverflow.com/) was also of great assistance throughout. The amount of detailed information was incredible to have, one particular issue that was solved through [StackOverflow](https://stackoverflow.com/) was the following:
+    * Setting cards all same height and width without stretching the image was resolved with this [article](https://stackoverflow.com/questions/37287153/how-to-get-images-in-bootstraps-card-to-be-the-same-height-width).
+
+* [Codepen.io](https://codepen.io/), in particular some work by [Lewis Carey](https://codepen.io/lewismcarey) helped with the CSS for the 'Free Delivery' ticker used throughout the website.
+    * This [pen](https://codepen.io/lewismcarey/pen/GJZVoG) in particular. 
+
+* [CSS Tricks](https://css-tricks.com/) was also a great website, and this [article](https://css-tricks.com/animating-number-counters/) put me on the right track for my client count on the [About Page](#about-us). 
+
+* Also [W3Schools](https://www.w3schools.com/) was helpful with regards to my issues on the [background position](https://www.w3schools.com/cssref/pr_background-position.php).
+
+<br>
+
+[Back to top &uarr;](#dreambuild-fitness)
+
+---
