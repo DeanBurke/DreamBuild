@@ -33,6 +33,11 @@ def bag_contents(request):
                     'size': size,
                 })
 
+    if total > settings.ORDER_DISCOUNT:
+        discount = total * Decimal(settings.DISCOUNT_PERCENTAGE / 100)
+    else:
+        discount = 0
+
     if total < settings.FREE_DELIVERY_THRESHOLD:
         delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
         free_delivery_delta = settings.FREE_DELIVERY_THRESHOLD - total
@@ -40,12 +45,13 @@ def bag_contents(request):
         delivery = 0
         free_delivery_delta = 0
     
-    grand_total = delivery + total
+    grand_total = delivery + total - discount
     
     context = {
         'bag_items': bag_items,
         'total': total,
         'product_count': product_count,
+        'discount': discount,
         'delivery': delivery,
         'free_delivery_delta': free_delivery_delta,
         'free_delivery_threshold': settings.FREE_DELIVERY_THRESHOLD,
