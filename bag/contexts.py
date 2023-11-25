@@ -52,6 +52,8 @@ def bag_contents(request):
         'total': total,
         'product_count': product_count,
         'discount': discount,
+        'discount_threshold': settings.ORDER_DISCOUNT,
+        'discount_percentage': settings.DISCOUNT_PERCENTAGE,
         'delivery': delivery,
         'free_delivery_delta': free_delivery_delta,
         'free_delivery_threshold': settings.FREE_DELIVERY_THRESHOLD,

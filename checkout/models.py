@@ -91,3 +91,13 @@ class OrderLineItem(models.Model):
 
     def __str__(self):
         return f'SKU {self.product.sku} on order {self.order.order_number}'
+
+
+class DiscountCode(models.Model):
+    code = models.CharField(max_length=10)
+    percentage = models.PositiveIntegerField(default=0)
+    valid_from = models.DateTimeField(null=True, blank=True)
+    valid_to = models.DateTimeField(null=True, blank=True)
+
+    def __str__(self):
+        return self.code

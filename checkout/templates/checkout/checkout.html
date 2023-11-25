@@ -58,6 +58,13 @@
                     </div>
                 {% endfor %}
                 <hr class="my-0">
+                <form action="{% url 'checkout' %}" method="POST" id="discount-form">
+                    {% csrf_token %}
+                    <div class="row text-black text-right mt-3 mb-2">
+                        <input type="text" name="discount_code" class="col-6 offset-4" placeholder="Enter discount code">
+                        <button type="submit" class="col-2 px-2 btn btn-black rounded-0"><strong>Apply</strong></button>
+                    </div>
+                </form>
                 <div class="row text-black text-right">
                     <div class="col-7 offset-2">
                         <p class="my-0">Order Total:</p>

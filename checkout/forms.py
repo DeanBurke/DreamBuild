@@ -1,5 +1,5 @@
 from django import forms
-from .models import Order
+from .models import Order, DiscountCode
 
 
 class OrderForm(forms.ModelForm):
@@ -37,3 +37,18 @@ class OrderForm(forms.ModelForm):
                 self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'stripe-style-input'
             self.fields[field].label = False
+
+
+class DiscountForm(forms.Form):
+    class Meta:
+        discount_code = forms.CharField(max_length=10, required=False)
+    
+    def __init__(self, *args, **kwargs):
+        """
+        Add placeholders and classes, remove auto-generated
+        labels and set autofocus on first field
+        """
+        super().__init__(*args, **kwargs)
+        placeholders = {
+            'discount_code': 'Discount Code',
+        }
