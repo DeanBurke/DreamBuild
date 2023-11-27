@@ -65,6 +65,21 @@
                         <button type="submit" class="col-2 px-2 btn btn-black rounded-0"><strong>Apply</strong></button>
                     </div>
                 </form>
+                {% if request.session.discount_code %}
+                    <div class="row text-black text-right mb-3 mt-1">
+                        <div class="col-11">
+                            <p class="my-0">
+                                <i class="fa-solid fa-tags"></i> Active Discount Code: <strong>{{ request.session.discount_code }}</strong>
+                            </p>
+                        </div>
+                        <div class="col-1">
+                            <form action="{% url 'remove_discount' %}" method="post">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-danger btn-sm">x</button>
+                            </form>
+                        </div>
+                    </div>
+                {% endif %}
                 <div class="row text-black text-right">
                     <div class="col-7 offset-2">
                         <p class="my-0">Order Total:</p>

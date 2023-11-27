@@ -213,3 +213,9 @@ def apply_discount(request):
         del request.session['discount_code']
     
     return render(request, 'apply_discount.html', {'discount_form': discount_form})
+
+
+def remove_discount(request):
+    if 'discount_code' in request.session:
+        del request.session['discount_code']
+    return redirect('checkout')

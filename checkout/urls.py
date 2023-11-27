@@ -13,4 +13,7 @@ urlpatterns = [
     path('wh/', webhook, name='webhook'),
     path(
         'apply-discount/', views.apply_discount, name='apply_discount'),
+    path(
+        'remove_discount/', 
+        views.remove_discount, name='remove_discount'),
 ]
