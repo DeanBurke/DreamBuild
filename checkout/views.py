@@ -3,9 +3,11 @@ from django.shortcuts import render, redirect, reverse, \
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
+from decimal import Decimal
+from django.db.models import F
 
-from .forms import OrderForm
-from .models import Order, OrderLineItem
+from .forms import OrderForm, DiscountForm
+from .models import Order, OrderLineItem, DiscountCode
 
 from products.models import Product
 from profiles.models import UserProfile
@@ -186,3 +188,28 @@ def checkout_success(request, order_number):
     }
 
     return render(request, template, context)
+
+
+def apply_discount(request):
+    """
+    Handle discount codes applied
+    """
+    if request.method == 'POST':
+        discount_form = DiscountForm(request.POST)
+        if discount_form.is_valid():
+            discount_code = discount_form.cleaned_data['discount_code']
+            try:
+                code_instance = DiscountCode.objects.get(code=discount_code)
+                request.session['discount_code'] = discount_code
+                messages.success(request, 'Discount code applied successfully!')
+                return redirect('checkout')  # Redirect to the checkout page
+            except DiscountCode.DoesNotExist:
+                messages.error(request, 'Invalid discount code. Please try again.')
+                return redirect(reverse('checkout'))
+    else:
+        discount_form = DiscountForm()
+
+    if 'discount_code' in request.session:
+        del request.session['discount_code']
+    
+    return render(request, 'apply_discount.html', {'discount_form': discount_form})

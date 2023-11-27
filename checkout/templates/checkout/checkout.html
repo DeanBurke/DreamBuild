@@ -58,7 +58,7 @@
                     </div>
                 {% endfor %}
                 <hr class="my-0">
-                <form action="{% url 'checkout' %}" method="POST" id="discount-form">
+                <form action="{% url 'apply_discount' %}" method="POST" id="discount-form">
                     {% csrf_token %}
                     <div class="row text-black text-right mt-3 mb-2">
                         <input type="text" name="discount_code" class="col-6 offset-4" placeholder="Enter discount code">
@@ -74,7 +74,7 @@
                     </div>
                     <div class="col-3">
                         <p class="my-0">£{{ total | floatformat:2 }}</p>
-                        <p class="my-0">£{{ discount | floatformat:2 }}</p>
+                        <p class="my-0">£{{ total_discount | floatformat:2 }}</p>
                         <p class="my-0">£{{ delivery | floatformat:2 }}</p>
                         <p class="my-0"><strong>£{{ grand_total | floatformat:2 }}</strong></p>
                     </div>

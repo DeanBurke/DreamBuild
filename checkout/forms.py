@@ -40,8 +40,7 @@ class OrderForm(forms.ModelForm):
 
 
 class DiscountForm(forms.Form):
-    class Meta:
-        discount_code = forms.CharField(max_length=10, required=False)
+    discount_code = forms.CharField(max_length=10, required=False)
     
     def __init__(self, *args, **kwargs):
         """
