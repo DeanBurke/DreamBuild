@@ -4,8 +4,8 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category
-from .forms import ProductForm
+from .models import Product, Category, ProductReview
+from .forms import ProductForm, ProductReviewForm
 
 # Create your views here.
 
@@ -150,11 +150,16 @@ def delete_product(request, product_id):
 @login_required
 def add_review(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
-    if request.method == 'POSTS':
-        rating = request.POST.get('rating')
-        comment = request.POST.get('comment')
-        user = request.user
-        review = ProductReview.objects.create(
-            product=product, user=user, rating=rating, comment=comment)
-        review.save()
-        return redirect('product_detail', product_id=product.id)
+    
+    if request.method == 'POST':
+        form = ProductReviewForm(request.POST)
+        if form.is_valid():
+            review = form.save(commit=False)
+            review.product = product
+            review.user = request.user  # Assuming you have user authentication
+            review.save()
+            return redirect('product_detail', product_id=product.id)
+    else:
+        form = ProductReviewForm()
+    
+    return redirect('product_detail', product_id=product.id)
