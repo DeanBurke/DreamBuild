@@ -145,3 +145,16 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+@login_required
+def add_review(request, product_id):
+    product = get_object_or_404(Product, pk=product_id)
+    if request.method == 'POSTS':
+        rating = request.POST.get('rating')
+        comment = request.POST.get('comment')
+        user = request.user
+        review = ProductReview.objects.create(
+            product=product, user=user, rating=rating, comment=comment)
+        review.save()
+        return redirect('product_detail', product_id=product.id)

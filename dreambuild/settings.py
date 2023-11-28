@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['dreambuildfitness-7af9d60474bd.herokuapp.com', '8000-deanburke-dreambuild-71zgwpk9hpb.ws-eu106.gitpod.io']
 
