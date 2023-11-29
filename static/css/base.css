@@ -161,13 +161,6 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
-.remove-discount {
-    height: 20px;
-    width: 20px;
-    padding: 0;
-    border: 0;
-}
-
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
@@ -364,8 +357,8 @@ input[name='q']::placeholder {
     animation-timing-function: linear;
     -webkit-animation-name: ticker;
     animation-name: ticker;
-    -webkit-animation-duration: 30s;
-    animation-duration: 30s;
+    -webkit-animation-duration: 45s;
+    animation-duration: 45s;
   }
   
   #delivery-banner .ticker__item {

@@ -109,27 +109,33 @@
                 <div class="product-review-container mb-5 mt-md-5">
                     <h5 class="mt-2 mb-2"><strong>Customer Reviews</strong></h5>
                     {% if user.is_authenticated %}
+                        <button class="btn btn-outline-black btn-sm rounded-0 mt-1 text-uppercase" type="button" data-toggle="collapse" 
+                        data-target="#reviewFormCollapse" aria-expanded="false" aria-controls="reviewFormCollapse">
+                            <small>Leave a Review  <i class="fas fa-chevron-down"></i></small>
+                        </button>
                         <!-- Form for adding a review -->
-                        <form  class="form-group" method="post" action="{% url 'add_review' product.id %}">
-                            {% csrf_token %}
-                            <label for="rating">Rating:</label>
-                            <select name="rating" id="rating" class="form-control rounded-0 w-50">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select><br>
-                            <label for="comment">Comment:</label><br>
-                            <textarea name="comment" id="comment" cols="30" rows="5" class="form-control rounded-0 w-50"></textarea><br>
-                            <input type="submit" value="Submit Review" class="btn btn-black rounded-0 text-uppercase mt-1 mb-5">
-                        </form>
+                        <div class="collapse mt-3" id="reviewFormCollapse">
+                            <form  class="form-group" method="post" action="{% url 'add_review' product.id %}">
+                                {% csrf_token %}
+                                <label for="rating">Rating:</label>
+                                <select name="rating" id="rating" class="form-control rounded-0 w-50">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select><br>
+                                <label for="comment">Comment:</label><br>
+                                <textarea name="comment" id="comment" cols="30" rows="5" class="form-control rounded-0 w-50"></textarea><br>
+                                <input type="submit" value="Submit Review" class="btn btn-black rounded-0 text-uppercase mt-1 mb-5">
+                            </form>
+                        </div>
                     {% else %}
                         <p class="mb-5">Please <a href="{% url 'account_login' %}">login</a> to leave a review.</p>
                     {% endif %}
 
                     {% if product.reviews.all %}
-                        <h5><strong>Existing Reviews</strong></h5>
+                        <h5 class="mt-4"><strong>Existing Reviews</strong></h5>
                         <ul>
                             {% for review in product.reviews.all %}
                                 <li>
