@@ -149,6 +149,7 @@ def delete_product(request, product_id):
 
 @login_required
 def add_review(request, product_id):
+    """ Add review for a product """
     product = get_object_or_404(Product, pk=product_id)
     
     if request.method == 'POST':
@@ -156,7 +157,7 @@ def add_review(request, product_id):
         if form.is_valid():
             review = form.save(commit=False)
             review.product = product
-            review.user = request.user  # Assuming you have user authentication
+            review.user = request.user
             review.save()
             return redirect('product_detail', product_id=product.id)
     else:

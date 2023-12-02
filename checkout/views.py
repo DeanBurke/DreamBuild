@@ -202,7 +202,7 @@ def apply_discount(request):
                 code_instance = DiscountCode.objects.get(code=discount_code)
                 request.session['discount_code'] = discount_code
                 messages.success(request, 'Discount code applied successfully!')
-                return redirect('checkout')  # Redirect to the checkout page
+                return redirect('checkout')
             except DiscountCode.DoesNotExist:
                 messages.error(request, 'Invalid discount code. Please try again.')
                 return redirect(reverse('checkout'))
@@ -216,6 +216,9 @@ def apply_discount(request):
 
 
 def remove_discount(request):
+    """
+    Delete discount codes applied
+    """
     if 'discount_code' in request.session:
         del request.session['discount_code']
     return redirect('checkout')
