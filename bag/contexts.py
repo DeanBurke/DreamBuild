@@ -2,12 +2,10 @@ from decimal import Decimal
 from django.conf import settings
 from django.shortcuts import redirect, get_object_or_404
 from products.models import Product
-from checkout.forms import DiscountForm
+from checkout.forms import DiscountForm, TipForm
 from checkout.models import DiscountCode
 
-
 def bag_contents(request):
-
     bag_items = []
     total = 0
     product_count = 0
@@ -53,6 +51,16 @@ def bag_contents(request):
 
     total_discount = discount + discount2
 
+    tip_amount = 0
+    
+    if 'tip_percentage' in request.session:
+        tip_percentage = request.session['tip_percentage']
+        try:
+            tip_amount = total * Decimal(int(tip_percentage) / 100)
+        except TypeError:
+            messages.error(request, 'Invalid Tip Ampunt')
+            return redirect(reverse('checkout'))
+
     if total < settings.FREE_DELIVERY_THRESHOLD:
         delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
         free_delivery_delta = settings.FREE_DELIVERY_THRESHOLD - total
@@ -60,7 +68,7 @@ def bag_contents(request):
         delivery = 0
         free_delivery_delta = 0
     
-    grand_total = delivery + total - total_discount
+    grand_total = delivery + total - total_discount + tip_amount
     
     context = {
         'bag_items': bag_items,
@@ -70,6 +78,7 @@ def bag_contents(request):
         'discount_threshold': settings.ORDER_DISCOUNT,
         'discount_percentage': settings.DISCOUNT_PERCENTAGE,
         'delivery': delivery,
+        'tip_amount': tip_amount,
         'free_delivery_delta': free_delivery_delta,
         'free_delivery_threshold': settings.FREE_DELIVERY_THRESHOLD,
         'grand_total': grand_total,

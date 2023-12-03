@@ -16,4 +16,5 @@ urlpatterns = [
     path(
         'remove_discount/', 
         views.remove_discount, name='remove_discount'),
+    path('apply_tip/', views.apply_tip, name='apply_tip'),
 ]

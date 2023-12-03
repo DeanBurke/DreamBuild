@@ -85,17 +85,40 @@
                         <p class="my-0">Order Total:</p>
                         <p class="my-0">Discount:</p>
                         <p class="my-0">Delivery:</p>
+                        <p class="my-0">Tip:</p>
                         <p class="my-0">Grand Total:</p>
                     </div>
                     <div class="col-3">
                         <p class="my-0">£{{ total | floatformat:2 }}</p>
                         <p class="my-0">£{{ total_discount | floatformat:2 }}</p>
                         <p class="my-0">£{{ delivery | floatformat:2 }}</p>
-                        <p class="my-0"><strong>£{{ grand_total | floatformat:2 }}</strong></p>
+                        <p class="my-0">£{{ tip_amount | floatformat:2 }}</p>
+                        <p class="my-0" id="grand_total"><strong>£{{ grand_total | floatformat:2 }}</strong></p>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-lg-6">
+                <p class="text-muted">Tip Options</p>
+                <form action="{% url 'apply_tip' %}" method="POST" id="tip-form">
+                    {% csrf_token %}
+                    <div class="row text-black text-right mt-3 mb-2">
+                        <!-- Tip percentage options -->
+                        <div class="col-12">
+                            <label><input type="radio" name="tip_percentage" value="0" checked> No Tip</label>
+                        </div>
+                        <div class="col-12">
+                            <label><input type="radio" name="tip_percentage" value="5"> 5% Tip</label>
+                        </div>
+                        <div class="col-12">
+                            <label><input type="radio" name="tip_percentage" value="10"> 10% Tip</label>
+                        </div>
+                        <div class="col-12">
+                            <label><input type="radio" name="tip_percentage" value="15"> 15% Tip</label>
+                        </div>
+                    </div>
+                    <!-- Submit button for the tip form -->
+                    <button type="submit" class="btn btn-black rounded-0">Apply Tip</button>
+                </form>
                 <p class="text-muted">Please fill out the form below to complete your order</p>
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                     {% csrf_token %}

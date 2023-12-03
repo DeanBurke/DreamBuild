@@ -6,7 +6,7 @@ from django.conf import settings
 from decimal import Decimal
 from django.db.models import F
 
-from .forms import OrderForm, DiscountForm
+from .forms import OrderForm, DiscountForm, TipForm
 from .models import Order, OrderLineItem, DiscountCode
 
 from products.models import Product
@@ -222,3 +222,17 @@ def remove_discount(request):
     if 'discount_code' in request.session:
         del request.session['discount_code']
     return redirect('checkout')
+
+
+def apply_tip(request):
+    if request.method == 'POST':
+        tip_form = TipForm(request.POST)
+        if tip_form.is_valid():
+            tip_percentage = tip_form.cleaned_data['tip_percentage']
+            request.session['tip_percentage'] = tip_percentage
+            messages.success(request, 'Tip applied successfully!')
+            return redirect('checkout')  # Redirect to your checkout page or another appropriate page after applying tip
+    else:
+        tip_form = TipForm()
+    
+    return render(request, 'apply_tip.html', {'tip_form': tip_form})

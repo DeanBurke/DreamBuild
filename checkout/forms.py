@@ -51,3 +51,20 @@ class DiscountForm(forms.Form):
         placeholders = {
             'discount_code': 'Discount Code',
         }
+
+
+class TipForm(forms.Form):
+    TIP_CHOICES = [
+        (0, 'No tip'),
+        (5, '5%'),
+        (10, '10%'),
+        (15, '15%'),
+    ]
+    
+    tip_percentage = forms.ChoiceField(
+        label='Tip Percentage',
+        choices=TIP_CHOICES,
+        required=True,
+        initial=0,
+        widget=forms.RadioSelect(),
+    )
