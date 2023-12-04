@@ -80,45 +80,63 @@
                         </div>
                     </div>
                 {% endif %}
+                <div class="text-right">
+                    <button class="btn btn-outline-black btn-sm rounded-0 mt-1 mb-1 text-uppercase" type="button" data-toggle="collapse" 
+                        data-target="#tipOptionsCollapse" aria-expanded="false" aria-controls="tipOptionsCollapse">
+                        <small>Show Tip Options <i class="fas fa-chevron-down"></i></small>
+                    </button>
+                
+                    <div class="collapse mt-3" id="tipOptionsCollapse">
+                        <p class="text-left">Your generous tips contribute to our support for Mental Health Foundation as we believe in fostering mental
+                            well-being alongside physical fitness. Choose a tip option below to join us in making a positive impact on 
+                            mental health awareness and support. See more on our 
+                            <a  href="{% url 'about' %}" id="about-link">About us</a> page.
+                        </p>
+                        <form method="post" action="{% url 'apply_tip' %}" class="form-group">
+                            {% csrf_token %}
+                            <div class="form-check text-right">
+                                <input class="form-check-input" type="radio" name="tip_percentage" id="noTip" value="0" checked>
+                                <label class="form-check-label" for="noTip">No Tip</label>
+                            </div>
+                            <div class="form-check text-right">
+                                <input class="form-check-input" type="radio" name="tip_percentage" id="fivePercent" value="5">
+                                <label class="form-check-label" for="fivePercent">5% Tip</label>
+                            </div>
+                            <div class="form-check text-right">
+                                <input class="form-check-input" type="radio" name="tip_percentage" id="tenPercent" value="10">
+                                <label class="form-check-label" for="tenPercent">10% Tip</label>
+                            </div>
+                            <div class="form-check text-right">
+                                <input class="form-check-input" type="radio" name="tip_percentage" id="fifteenPercent" value="15">
+                                <label class="form-check-label" for="fifteenPercent">15% Tip</label>
+                            </div>
+                            <!-- Submit button for the tip form -->
+                            <button type="submit" class="btn btn-black btn-sm rounded-0 mt-1 mb-2">Apply Tip</button>
+                        </form>
+                    </div>
+                </div>
                 <div class="row text-black text-right">
                     <div class="col-7 offset-2">
                         <p class="my-0">Order Total:</p>
                         <p class="my-0">Discount:</p>
                         <p class="my-0">Delivery:</p>
+                        {% if tip_amount and tip_amount > 0 %}
                         <p class="my-0">Tip:</p>
+                        {% endif %}
                         <p class="my-0">Grand Total:</p>
                     </div>
                     <div class="col-3">
                         <p class="my-0">£{{ total | floatformat:2 }}</p>
                         <p class="my-0">£{{ total_discount | floatformat:2 }}</p>
                         <p class="my-0">£{{ delivery | floatformat:2 }}</p>
+                        {% if tip_amount and tip_amount > 0 %}
                         <p class="my-0">£{{ tip_amount | floatformat:2 }}</p>
+                        {% endif %}
                         <p class="my-0" id="grand_total"><strong>£{{ grand_total | floatformat:2 }}</strong></p>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-lg-6">
-                <p class="text-muted">Tip Options</p>
-                <form action="{% url 'apply_tip' %}" method="POST" id="tip-form">
-                    {% csrf_token %}
-                    <div class="row text-black text-right mt-3 mb-2">
-                        <!-- Tip percentage options -->
-                        <div class="col-12">
-                            <label><input type="radio" name="tip_percentage" value="0" checked> No Tip</label>
-                        </div>
-                        <div class="col-12">
-                            <label><input type="radio" name="tip_percentage" value="5"> 5% Tip</label>
-                        </div>
-                        <div class="col-12">
-                            <label><input type="radio" name="tip_percentage" value="10"> 10% Tip</label>
-                        </div>
-                        <div class="col-12">
-                            <label><input type="radio" name="tip_percentage" value="15"> 15% Tip</label>
-                        </div>
-                    </div>
-                    <!-- Submit button for the tip form -->
-                    <button type="submit" class="btn btn-black rounded-0">Apply Tip</button>
-                </form>
                 <p class="text-muted">Please fill out the form below to complete your order</p>
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                     {% csrf_token %}
