@@ -38,6 +38,8 @@ def bag_contents(request):
     else:
         discount = 0
 
+    code_instance = None
+    
     discount2 = 0
 
     if 'discount_code' in request.session:
@@ -75,6 +77,7 @@ def bag_contents(request):
         'total': total,
         'product_count': product_count,
         'total_discount': total_discount,
+        'discount': code_instance,
         'discount_threshold': settings.ORDER_DISCOUNT,
         'discount_percentage': settings.DISCOUNT_PERCENTAGE,
         'delivery': delivery,

@@ -196,8 +196,13 @@ def apply_discount(request):
     """
     if request.method == 'POST':
         discount_form = DiscountForm(request.POST)
+        discount_code = request.POST.get('discount_code', '')
+
+        if len(discount_code) > 10:
+            messages.error(request, 'The discount code should not exceed 10 characters.')
+            return redirect(reverse('checkout'))
+
         if discount_form.is_valid():
-            discount_code = discount_form.cleaned_data['discount_code']
             try:
                 code_instance = DiscountCode.objects.get(code=discount_code)
                 request.session['discount_code'] = discount_code
@@ -225,13 +230,16 @@ def remove_discount(request):
 
 
 def apply_tip(request):
+    """
+    Handle tip process
+    """
     if request.method == 'POST':
         tip_form = TipForm(request.POST)
         if tip_form.is_valid():
             tip_percentage = tip_form.cleaned_data['tip_percentage']
             request.session['tip_percentage'] = tip_percentage
             messages.success(request, 'Tip applied successfully!')
-            return redirect('checkout')  # Redirect to your checkout page or another appropriate page after applying tip
+            return redirect('checkout')
     else:
         tip_form = TipForm()
     
