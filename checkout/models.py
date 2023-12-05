@@ -27,8 +27,12 @@ class Order(models.Model):
     date = models.DateTimeField(auto_now_add=True)
     delivery_cost = models.DecimalField(
         max_digits=6, decimal_places=2, null=False, default=0)
+    discount_code = models.ForeignKey('DiscountCode', on_delete=models.SET_NULL,
+        null=True, blank=True)
     discount_spend = models.DecimalField(
         max_digits=6, decimal_places=2, null=False, default=0)
+    tip_amount = models.DecimalField(
+        max_digits=10, decimal_places=2, null=True, default=0)
     order_total = models.DecimalField(
         max_digits=10, decimal_places=2, null=False, default=0)
     grand_total = models.DecimalField(
@@ -58,7 +62,15 @@ class Order(models.Model):
             self.delivery_cost = self.order_total * settings.STANDARD_DELIVERY_PERCENTAGE / 100
         else:
             self.delivery_cost = 0
-        self.grand_total = self.order_total + self.delivery_cost - self.discount_spend
+        if self.discount_code:
+            try:
+                code_instance = DiscountCode.objects.get(code=self.discount_code.code)
+                self.discount_code_amount = self.order_total * code_instance.percentage / 100
+            except DiscountCode.DoesNotExist:
+                self.discount_code_amount = 0
+        else:
+            self.discount_code_amount = 0
+        self.grand_total = self.order_total + self.delivery_cost - self.discount_spend - self.discount_code_amount
         self.save()
 
     def save(self, *args, **kwargs):
@@ -72,7 +84,6 @@ class Order(models.Model):
 
     def __str__(self):
         return self.order_number
-
 
 class OrderLineItem(models.Model):
     order = models.ForeignKey(
