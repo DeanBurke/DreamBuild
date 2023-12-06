@@ -767,6 +767,8 @@ Multiple apps and classes/models were created for the project, each one supporti
 
 * Sale feature, where admin can quickly set sales on products under certain categories and give the sale an expiry date. 
 
+* Split the payments going to Stripe, so tips go separate, which will make it easier for the company to make the donation. 
+
 [Back to top &uarr;](#dreambuild-fitness)
 
 ---
@@ -976,7 +978,7 @@ Multiple apps and classes/models were created for the project, each one supporti
     * When updating the order model, while testing the discount logic, which was some trial and error. It seemed to want me to make migration for something that was migrated a few hours prior and was working fine. 
     * From searching for solutions through Slack and Google, and chatting to the Tutor team at [Code Institute](https://codeinstitute.net/), I had to reset my ElephantSQL database. 
     * Had to set up fixtures and a few other areas again, but it all worked fine. 
-    
+
 ## Unresolved Bugs 
 
 * No known bugs present in the project at the time of writing this readme/testing.
@@ -1445,16 +1447,19 @@ Multiple apps and classes/models were created for the project, each one supporti
 
     * Flask walkthrough project
 
+    * I Think Therefore I Blog
+
     * Hello Django
 
     * Boutique Ado
 
 * I used the [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/) documentation pages throughout this project, which were extremely helpful for styling. 
 
-* Slack was used throughout the project, as small issues arose. Previous students having similar queries really assited me as the solution was talked through my other helpful members of [Code Institute](https://codeinstitute.net/).
+* Slack was used throughout the project, as small issues arose. Previous students having similar queries really assited me as the solution was talked through my other helpful members of [Code Institute](https://codeinstitute.net/). The tutor team was also an incredible help throughout!
 
-* [StackOverflow](https://stackoverflow.com/) was also of great assistance throughout. The amount of detailed information was incredible to have, one particular issue that was solved through [StackOverflow](https://stackoverflow.com/) was the following:
+* [StackOverflow](https://stackoverflow.com/) was also of great assistance throughout. The amount of detailed information was incredible to have, a few particular issues that were solved through [StackOverflow](https://stackoverflow.com/) were the following:
     * Setting cards all same height and width without stretching the image was resolved with this [article](https://stackoverflow.com/questions/37287153/how-to-get-images-in-bootstraps-card-to-be-the-same-height-width).
+    * Setting up the initial discount code logic, this [article](https://stackoverflow.com/questions/65678232/how-to-redeem-coupon-code-which-i-created-in-django) put me on the right track
 
 * [Codepen.io](https://codepen.io/), in particular some work by [Lewis Carey](https://codepen.io/lewismcarey) helped with the CSS for the 'Free Delivery' ticker used throughout the website.
     * This [pen](https://codepen.io/lewismcarey/pen/GJZVoG) in particular. 
