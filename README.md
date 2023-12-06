@@ -965,6 +965,18 @@ Multiple apps and classes/models were created for the project, each one supporti
     * Annoyingly it was a quick fix in the end to resolve this, by just using the classes that were being took from Mailchimp's core css, and using:<br>
      `!important`
 
+* **Discounts / Tip**
+
+    * When I got the functionality of all the discount logic, that was being applied to the bag. It was correctly showing in the browser, and the grand total was being updated to the correct amount. 
+    * However, upon succesfully checking out, I noticed it was duplicating orders and the incorrect total was being sent to Stripe.
+    * This was due to me not updating the checkout view and the "update_total" function within the order model. Once this was done, successful orders were put through, and they matched the total being sent to Stripe also.
+
+* **Migrations**
+
+    * When updating the order model, while testing the discount logic, which was some trial and error. It seemed to want me to make migration for something that was migrated a few hours prior and was working fine. 
+    * From searching for solutions through Slack and Google, and chatting to the Tutor team at [Code Institute](https://codeinstitute.net/), I had to reset my ElephantSQL database. 
+    * Had to set up fixtures and a few other areas again, but it all worked fine. 
+    
 ## Unresolved Bugs 
 
 * No known bugs present in the project at the time of writing this readme/testing.

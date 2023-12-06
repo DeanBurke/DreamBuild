@@ -54,7 +54,6 @@ def checkout(request):
             'county': request.POST['county'],
         }
 
-        
         current_bag = bag_contents(request)
         order_form = OrderForm(form_data)
         if order_form.is_valid():
@@ -203,7 +202,8 @@ def apply_discount(request):
         discount_code = request.POST.get('discount_code', '')
 
         if len(discount_code) > 10:
-            messages.error(request, 'The discount code should not exceed 10 characters.')
+            messages.error(request, 'The discount code should \
+            not exceed 10 characters.')
             return redirect(reverse('checkout'))
 
         if discount_form.is_valid():

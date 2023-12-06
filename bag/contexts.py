@@ -1,9 +1,9 @@
 from decimal import Decimal
 from django.conf import settings
-from django.shortcuts import redirect, get_object_or_404
+from django.shortcuts import redirect, get_object_or_404, reverse
 from products.models import Product
-from checkout.forms import DiscountForm, TipForm
 from checkout.models import DiscountCode
+
 
 def bag_contents(request):
     bag_items = []

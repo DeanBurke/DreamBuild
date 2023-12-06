@@ -150,8 +150,7 @@ def delete_product(request, product_id):
 @login_required
 def add_review(request, product_id):
     """ Add review for a product """
-    product = get_object_or_404(Product, pk=product_id)
-    
+    product = get_object_or_404(Product, pk=product_id)    
     if request.method == 'POST':
         form = ProductReviewForm(request.POST)
         if form.is_valid():

@@ -12,11 +12,14 @@ class OrderAdmin(admin.ModelAdmin):
 
     def get_discount_code_discount(self, obj):
         """
-        Custom method to calculate and display the discount using the figure from the DiscountCode model.
+        Custom method to calculate and display the discount 
+        using the figure from the DiscountCode model.
         """
         if obj.discount_code:
             try:
-                code_instance = DiscountCode.objects.get(code=obj.discount_code.code)
+                code_instance = (
+                    DiscountCode.objects.get(code=obj.discount_code.code)
+                )
                 discount = obj.order_total * code_instance.percentage / 100
                 return round(discount, 2)
             except DiscountCode.DoesNotExist:
