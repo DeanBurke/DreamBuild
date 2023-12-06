@@ -55,8 +55,6 @@ def checkout(request):
         }
 
         
-
-        # tip_amount = request.session.get('tip_amount')
         current_bag = bag_contents(request)
         order_form = OrderForm(form_data)
         if order_form.is_valid():
@@ -65,7 +63,7 @@ def checkout(request):
             order.stripe_pid = pid
             order.original_bag = json.dumps(bag)
             order.discount_code = current_bag['discount']
-            # order.tip_amount = tip_amount
+            order.tip_amount = current_bag['tip_amount']
             order.save()
             for item_id, item_data in bag.items():
                 try:

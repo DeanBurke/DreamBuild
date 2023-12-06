@@ -3,6 +3,7 @@ import uuid
 from django.db import models
 from django.db.models import Sum
 from django.conf import settings
+from decimal import Decimal
 
 from django_countries.fields import CountryField
 
@@ -47,7 +48,7 @@ class Order(models.Model):
         """
         return uuid.uuid4().hex.upper()
 
-    def update_total(self):
+    def update_total(self, tip_amount=Decimal('0')):
         """
         Update grand total each time a line item is added,
         accounting for delivery costs.
@@ -70,7 +71,7 @@ class Order(models.Model):
                 self.discount_code_amount = 0
         else:
             self.discount_code_amount = 0
-        self.grand_total = self.order_total + self.delivery_cost - self.discount_spend - self.discount_code_amount
+        self.grand_total = self.order_total + self.delivery_cost - self.discount_spend - self.discount_code_amount + self.tip_amount
         self.save()
 
     def save(self, *args, **kwargs):
