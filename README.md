@@ -579,6 +579,16 @@ Multiple apps and classes/models were created for the project, each one supporti
     ![Screenshot of bag - removed item](./readme_assets/img/bag-remove.jpg)<br>
     *Screenshot of bag - removed item*
 
+* If the shopper spends over £120, as shown on the ticker at the top of the page. 
+
+    ![Screenshot of bag - discount spend](./readme_assets/img/discount-spend.jpg)<br>
+    *Screenshot of discount spend info*
+
+* They will get 10% off their order total.
+
+    ![Screenshot of bag - discount spend applied](./readme_assets/img/bag-discount-spend.jpg)<br>
+    *Screenshot of bag - discount spend *
+
 * On smaller screens the bag stacks for a better user experience, with the total being placed on top. A back to top button has been added for ease when making a big purchase! 
 
     ![Screenshot of bag - smaller screens](./readme_assets/img/bag-smaller-screen.jpg) <br>
@@ -605,6 +615,32 @@ Multiple apps and classes/models were created for the project, each one supporti
 
     ![Screenshot of checkout - invalid card](./readme_assets/img/checkout-invalid-card.jpg) <br>
     *Screenshot of checkout - invalid card*
+
+* There is also a discount code feature on the on the checkout page for any ongoing campaigns. Along with a tip feature for the user to donate towards DreamBuild's sponsored charity. 
+
+    ![Screenshot of checkout - discount code and tip](./readme_assets/img/checkout-discount-tip.jpg) <br>
+    *Screenshot of checkout - discount code and tip*
+
+* If the user enters a valid code (**XMAS20**) they'll get a success message and the discount code will be viewable, and also be able to delete it. 
+
+    ![Screenshot of checkout - discount code valid](./readme_assets/img/checkout-discount-code.jpg) ![Screenshot of checkout - discount code valid](./readme_assets/img/checkout-discount-code-valid.jpg)<br>
+    *Screenshot of checkout - valid discount code*
+
+* The user will get an error message if they enter an incorrect code. 
+
+    ![Screenshot of checkout - discount code invalid](./readme_assets/img/checkout-discount-code-invalid.jpg) ![Screenshot of checkout - discount code invlaid](./readme_assets/img/checkout-discount-code-invalid2.jpg)<br>
+    *Screenshot of checkout - invalid discount code*
+
+* For the tip feature there is four options from a dropdown menu, with no tip being set to default. When no tip is selected it isn't visible on the totals line. 
+
+    ![Screenshot of checkout - tip options](./readme_assets/img/checkout-tip-notip.jpg) <br>
+    *Screenshot of checkout - tip options*
+
+* When a tip is applied, the user will get a success message. and tip will be visible on the totals line. 
+
+    ![Screenshot of checkout - tip applied success](./readme_assets/img/checkout-tip-success.jpg) <br>
+    ![Screenshot of checkout - tip applied](./readme_assets/img/checkout-tip-applied.jpg) <br>
+    *Screenshot of checkout - tip applied successfully*
 
 <hr>
 
