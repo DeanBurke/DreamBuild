@@ -91,6 +91,10 @@ Many user stories were developed for the project using Agile development methodo
  * [Issue #20](https://github.com/DeanBurke/DreamBuild/issues/20) I can feel my personal and payment information is safe and secure so that I can Confidently provide the needed information to make a purhcase.
  * [Issue #21](https://github.com/DeanBurke/DreamBuild/issues/21) I can view an order confirmation after checkout so that I can Verify that I haven't made any mistakes.
  * [Issue #22](https://github.com/DeanBurke/DreamBuild/issues/22) I can receive an email confirmation after checking out so that I can keep the confirmation of what I've purchased for my records.
+ * [Issue #28](https://github.com/DeanBurke/DreamBuild/issues/28) I can spend over a certain amount so that I can receive a discount on my total spend.
+ * [Issue #29](https://github.com/DeanBurke/DreamBuild/issues/29) I can enter a valid discount code so that I can receive an additional discount to my purchase due to an ongoing campaign that is running.
+ * [Issue #30](https://github.com/DeanBurke/DreamBuild/issues/30) I can leave a review so that I can give feedback to the company on a recent purchase.
+ * [Issue #31](https://github.com/DeanBurke/DreamBuild/issues/31) I can leave a tip with my purchase so that I can support a charity/cause that DreamBuild supports.
 
 #### **Site User**
  * [Issue #6](https://github.com/DeanBurke/DreamBuild/issues/6) I can easily register for an account so that I can have a personal account and be able to view my profile.
@@ -108,7 +112,9 @@ Many user stories were developed for the project using Agile development methodo
 
 <br>
 
-![Screenshot of the User Stories Project](./readme_assets/img/user-stories.jpg)
+![Screenshot of the User Stories Project](./readme_assets/img/user-stories2.jpg)
+
+[Link to Project Board](https://github.com/users/DeanBurke/projects/3)
 
 [Back to top &uarr;](#dreambuild-fitness)
 
@@ -240,6 +246,9 @@ Multiple apps and classes/models were created for the project, each one supporti
     |county         |county         |CharField      |max_length=80, null=True, blank=True                                                  |
     |date           |date           |DateTimeField  |auto_now_add=True                                                                     |
     |delivery_cost  |delivery_cost  |DecimalField   |max_digits=6, decimal_places=2, null=False, default=0                                 |
+    |discount_code  |discount_code  |ForeignKey     |'DiscountCode', on_delete=models.SET_NULL, null=True, blank=True                      |
+    |discount_spend |discount_spend |DecimalField   |max_digits=6, decimal_places=2, null=False, default=0                                 |
+    |tip_amount     |tip_amount     |DecimalField   |max_digits=6, decimal_places=2, null=False, default=0                                 |
     |order_total    |order_total    |DecimalField   |max_digits=10, decimal_places=2, null=False, default=0                                |
     |grand_total    |grand_total    |DecimalField   |max_digits=10, decimal_places=2, null=False, default=0                                |
     |original_bag   |original_cart  |TextField      |null=False, blank=False, default=''                                                   |
