@@ -418,7 +418,12 @@ Multiple apps and classes/models were created for the project, each one supporti
 
 * On arrival to the About Us page, a counter begins to run with the current clients total. 
 
-* There is a brief description on brand's values and its hopes for any future clients - while also offering highend gym clothing. 
+* There is a brief description on brand's values and its hopes for any future clients - while also offering highend gym clothing.
+
+* There is paragraph stating the brand's charity endeavours, and a link that will take you to the charity that is supported. 
+
+![Screenshot of about us page charity](./readme_assets/img/about-charity-link.jpg) <br>
+    *Gif of about us page*
 
 * There is also a "Join Today!" button, directing the site user to the Plans page
 
@@ -471,6 +476,21 @@ Multiple apps and classes/models were created for the project, each one supporti
 
     ![Screenshot of back to top button](./readme_assets/img/products-backtotop.jpg)<br>
     *Screenshot of back to top button*
+
+* There is an option for users to leave a review on products, once they are logged in.
+
+    ![Screenshot of product reviews 1](./readme_assets/img/product-customer-review-1.jpg) ![Screenshot of product reviews 2](./readme_assets/img/product-customer-review-2.jpg)<br>
+    *Screenshot of back to product reviews*
+    
+* Once logged in the user can leave a 1 to 5 rating along with a comment on the product.
+
+    ![Screenshot of product reviews form](./readme_assets/img/product-customer-review-3.jpg)<br>
+    *Screenshot of back to product reviews form*
+
+* When the user clicks submit, all reviews will be listed out. 
+
+    ![Screenshot of product reviews list](./readme_assets/img/product-customer-review-4.jpg)<br>
+    *Screenshot of back to product reviews form*
 
 ### Plans
 
