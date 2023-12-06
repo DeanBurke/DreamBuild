@@ -763,11 +763,9 @@ Multiple apps and classes/models were created for the project, each one supporti
 
 * A community related page where signed in users can create questions or give feedback on certain training splits etc. 
 
-* The ability to leave comments on products and ratings
-
 * Add Social sign-in options (Google, GitHub, Facebook)
 
-* Discout code feature / Support an Affiliate codes
+* Sale feature, where admin can quickly set sales on products under certain categories and give the sale an expiry date. 
 
 [Back to top &uarr;](#dreambuild-fitness)
 
@@ -871,8 +869,9 @@ Multiple apps and classes/models were created for the project, each one supporti
 **About Us**
 
 * Tested to make sure client counter loads correctly on page load up.
+* Tested to make sure the link to [Mental Health Foundation](https://www.mentalhealth.org.uk/) options up on a new page once clicked. 
 * Tested to make sure the 'Join Today!' button directs the user to the Plans page. 
-* Tested to make sure the page stacts correctly on smaller screens.
+* Tested to make sure the page stacks correctly on smaller screens.
 
 **Products Page**
 
@@ -881,6 +880,9 @@ Multiple apps and classes/models were created for the project, each one supporti
 * Tested to make sure the edit/delete buttons are visible only when logged in as a Superuser / Admin. When edit is clicked it'll pre load the Product Management page with the products information before updating. 
 * Tested to make sure the size option is only visible on products where it is needed. 
 * Tested to make sure the products stack to a suitable amount depending on screen size. 
+* Tested to make sure the customer review asks you to login before being able to leave a review.
+* Tested to make sure the form is visisble and usable once logged in. 
+* Tested to make sure the reviews stack on top of each other once submitted. 
 * Tested to make sure the Back To Top button works correctly. 
 
 **Account**
@@ -899,6 +901,7 @@ Multiple apps and classes/models were created for the project, each one supporti
 * Tested to make sure when an item it is added it shows a summary with a success message.
 * Tested to make sure the update and remove buttons and functionality work correctly. 
 * Tested to make sure the delivery charge logic works correctly depending on how much(£) is in the bag. 
+* Tested to make sure the discount spend logic works correctly depending on how much(£) is in the bag. 
 * Tested to make sure the bag page stacks correctly on smaller screens. 
 
 **Checkout**
@@ -907,6 +910,11 @@ Multiple apps and classes/models were created for the project, each one supporti
 * Tested to make sure the option to login, and thus save the user's delivery details as an option works correctly. 
 * Tested to make sure the loading overlay initiates once the 'Complete Order' button is pressed and the user is directed to a success page with an order confirmation and an email sent to the inbox. 
 * Tested to make sure payment is received on Stripe via webhooks, and are successful. 
+* Tested to make sure the discount code submits valid codes, and gives an error if not. 
+* Tested to make sure the active discount code is visible and is able to be removed. 
+* Tested to make sure the tip options is default set to no tip, and the tip total won't show if so. 
+* Tested to make sure the dropdown functionality works fine, and tips can be applied successfully. 
+* Tested to make sure the discount and tip totals update correctly depending on what is applied. 
 * Tested to make sure the checkout page stacks correctly on smaller screens. 
 
 **Admin**
