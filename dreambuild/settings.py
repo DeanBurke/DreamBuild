@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'l_m131mm0o11xe8n@#7h)bxa!x!ri7kg4tw%2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['dreambuildfitness-7af9d60474bd.herokuapp.com', '8000-deanburke-dreambuild-71zgwpk9hpb.ws-eu106.gitpod.io']
+ALLOWED_HOSTS = ['dreambuildfitness-7af9d60474bd.herokuapp.com', '8000-deanburke-dreambuild-r3ey7jxq6nu.ws-eu106.gitpod.io']
 
 
 # Application definition
