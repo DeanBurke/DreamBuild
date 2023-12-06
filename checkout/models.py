@@ -30,6 +30,8 @@ class Order(models.Model):
         max_digits=6, decimal_places=2, null=False, default=0)
     discount_code = models.ForeignKey('DiscountCode', on_delete=models.SET_NULL,
         null=True, blank=True)
+    discount_code_amount = models.DecimalField(
+        max_digits=6, decimal_places=2, null=False, default=0)
     discount_spend = models.DecimalField(
         max_digits=6, decimal_places=2, null=False, default=0)
     tip_amount = models.DecimalField(

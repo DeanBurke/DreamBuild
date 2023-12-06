@@ -71,7 +71,7 @@ DreamBuild Fitness aims to cater to a diverse audience, offering resources and p
 
 ## User Stories
 
-Many user stories were developed for the project using Agile development methodology, for the project see the [DreamBuild Project](https://github.com/users/DeanBurke/projects/3/views/1).
+Many user stories were developed for the project using Agile development methodology, for the project see the [DreamBuild Project](https://github.com/users/DeanBurke/projects/3/).
 
 #### **Buyer**
  * [Issue #1](https://github.com/DeanBurke/DreamBuild/issues/1) I can view a list of products so that I can select some to purchase.
