@@ -71,7 +71,13 @@ class Order(models.Model):
                 self.discount_code_amount = 0
         else:
             self.discount_code_amount = 0
-        self.grand_total = self.order_total + self.delivery_cost - self.discount_spend - self.discount_code_amount + self.tip_amount
+        self.grand_total = (
+            Decimal(self.order_total) +
+            Decimal(self.delivery_cost) -
+            Decimal(self.discount_spend) -
+            Decimal(self.discount_code_amount) +
+            Decimal(self.tip_amount)
+        )
         self.save()
 
     def save(self, *args, **kwargs):
